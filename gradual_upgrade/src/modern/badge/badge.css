@@ -1,0 +1,19 @@
+.app-badge {
+    display: flex;
+    flex: 1 1 200px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.app-badge__img {
+    height: 40px;
+    width: 40px;
+}
+
+.app-badge__count {
+    padding: 0 10px;
+    line-height: 10px;
+    font-size: 15pt;
+}

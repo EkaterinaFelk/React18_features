@@ -1,0 +1,20 @@
+.app-card {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(167, 169, 169, 0.371), white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+}
+.app-card:hover{
+    background: linear-gradient(white, rgba(196, 232, 234, 0.371));
+}
+.app-card__type {
+    font-weight: 600;
+    font-size: 22px;
+}
+.app-card__name {
+    font-size: 22px;
+}
+.app-card__age {
+    color: gray;
+}

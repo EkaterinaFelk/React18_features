@@ -1,0 +1,32 @@
+.app-disclaimer {
+    position:relative;
+    display: flex;
+    align-items: center;
+    padding: 6px 20px;
+    background-color: crimson;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width:fit-content;
+}
+
+.app-disclaimer__text {
+    margin-left: 40px;
+}
+
+.app-disclaimer__img {
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    animation: wiggle 1s linear 3;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(40deg); }
+   95% { transform: rotate(-40deg); }
+  100% { transform: rotate(0deg); }
+}
+

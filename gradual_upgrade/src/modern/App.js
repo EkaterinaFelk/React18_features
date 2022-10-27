@@ -1,19 +1,16 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 import React from 'react';
-import {useState, Suspense} from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { useState, Suspense } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
 import ThemeContext from './shared/ThemeContext';
+import Layout from './layout/layout';
+import { ROUTE_URLS } from '../constants/routes';
+import React18Page from './React18Page';
+import { useEffect, useMemo, memo } from 'react';
+import generateData from '../api/generator';
+import lazyLegacyRoot from './lazyLegacyRoot';
 
-export default function App() {
+const App = memo(() => {
   const [theme, setTheme] = useState('slategrey');
 
   function handleToggleClick() {
@@ -24,33 +21,29 @@ export default function App() {
     }
   }
 
+  useEffect(() => console.log('App mount'), []);
+
+  //useEffect(() => console.dir(generateData(10)), []);
+
+  const React16Page = useMemo(() => lazyLegacyRoot(() => import('../legacy/React16Page')), []);
+
   return (
     <BrowserRouter>
       <ThemeContext.Provider value={theme}>
-        <div style={{fontFamily: 'sans-serif'}}>
-          <div
-            style={{
-              margin: 20,
-              padding: 20,
-              border: '1px solid black',
-              minHeight: 300,
-            }}>
-            <button onClick={handleToggleClick}>Toggle Theme Context</button>
-            <br />
-            <Suspense fallback={<Spinner />}>
-            
-              <Routes>
-                    <Route path={"/about"} element={<AboutPage />} />
-                    <Route path={"/"} element={<HomePage />} />
-              </Routes>
-           
-            </Suspense>
-          </div>
-        </div>
+        <Layout>
+          <Suspense fallback={<Spinner />}>
+            <Routes>
+              <Route path={ROUTE_URLS.react18} element={<React18Page />} />
+              <Route path={ROUTE_URLS.react16} element={<React16Page />} />
+              <Route path={'/'} element={<React16Page />} />
+            </Routes>
+          </Suspense>
+        </Layout>
       </ThemeContext.Provider>
     </BrowserRouter>
   );
-}
+});
+export default App;
 
 function Spinner() {
   return null;

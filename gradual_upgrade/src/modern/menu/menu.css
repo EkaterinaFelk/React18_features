@@ -1,0 +1,23 @@
+.app-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    font-size: 14pt;
+    font-weight: 600;
+}
+
+.app-menu__item {
+    margin: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.app-menu__item a {
+    color: white;
+    text-decoration: none;
+}
+.app-menu__item a:hover {
+    color:black;
+}

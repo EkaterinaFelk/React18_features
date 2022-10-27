@@ -6,23 +6,23 @@
  */
 
 import React from 'react';
-import {useContext, useMemo, useRef, useLayoutEffect} from 'react';
-import {UNSAFE_RouteContext} from 'react-router';
-import {ReactReduxContext} from 'react-redux';
+import { useContext, useMemo, useRef, useLayoutEffect } from 'react';
+import { UNSAFE_RouteContext } from 'react-router';
+import { ReactReduxContext } from 'react-redux';
 
 import ThemeContext from './shared/ThemeContext';
 
 let rendererModule = {
   status: 'pending',
   promise: null,
-  result: null,
+  result: null
 };
 
 export default function lazyLegacyRoot(getLegacyComponent) {
   let componentModule = {
     status: 'pending',
     promise: null,
-    result: null,
+    result: null
   };
 
   return function Wrapper(props) {
@@ -42,7 +42,7 @@ export default function lazyLegacyRoot(getLegacyComponent) {
       () => ({
         theme,
         router,
-        reactRedux,
+        reactRedux
       }),
       [theme, router, reactRedux]
     );
@@ -65,7 +65,7 @@ export default function lazyLegacyRoot(getLegacyComponent) {
       }
     }, [Component, props, context]);
 
-    return <div style={{display: 'contents'}} ref={containerRef} />;
+    return <div style={{ display: 'contents' }} ref={containerRef} />;
   };
 }
 
@@ -81,14 +81,14 @@ function readModule(record, createPromise) {
   }
   if (!record.promise) {
     record.promise = createPromise().then(
-      value => {
+      (value) => {
         if (record.status === 'pending') {
           record.status = 'fulfilled';
           record.promise = null;
           record.result = value;
         }
       },
-      error => {
+      (error) => {
         if (record.status === 'pending') {
           record.status = 'rejected';
           record.promise = null;

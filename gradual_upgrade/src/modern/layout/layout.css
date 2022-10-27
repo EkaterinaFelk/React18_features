@@ -1,0 +1,6 @@
+.app-wrapper {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Courier New', Courier, monospace;
+}

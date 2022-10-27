@@ -1,0 +1,7 @@
+.app-header{
+    height: 40px;
+    display:flex;
+    background-color: #1a76d2;
+    padding: 15px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

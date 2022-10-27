@@ -1,0 +1,18 @@
+.app-logo {
+    display: flex;
+    flex: 0 1 200px;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.app-logo__img {
+    height: 40px;
+    width: 40px;
+}
+
+.app-logo__title {
+    padding: 0 10px;
+    line-height: 10px;
+    font-size: 15pt;
+}
