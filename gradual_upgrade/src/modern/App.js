@@ -3,7 +3,7 @@ import { useState, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ThemeContext from './shared/ThemeContext';
-import Layout from './layout/layout';
+import Layout from './components/layout/layout';
 import { ROUTE_URLS } from '../constants/routes';
 import React18Page from './React18Page';
 import { useEffect, useMemo, memo } from 'react';
@@ -11,15 +11,7 @@ import generateData from '../api/generator';
 import lazyLegacyRoot from './lazyLegacyRoot';
 
 const App = memo(() => {
-  const [theme, setTheme] = useState('slategrey');
-
-  function handleToggleClick() {
-    if (theme === 'slategrey') {
-      setTheme('hotpink');
-    } else {
-      setTheme('slategrey');
-    }
-  }
+  const [theme, setTheme] = useState('list');
 
   useEffect(() => console.log('App mount'), []);
 
@@ -29,7 +21,7 @@ const App = memo(() => {
 
   return (
     <BrowserRouter>
-      <ThemeContext.Provider value={theme}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
         <Layout>
           <Suspense fallback={<Spinner />}>
             <Routes>

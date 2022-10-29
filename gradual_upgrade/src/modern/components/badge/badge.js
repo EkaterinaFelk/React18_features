@@ -1,5 +1,5 @@
 import './badge.css';
-import badge from '../../assets/badge.png';
+import badge from '../../../assets/badge.png';
 
 export default function Badge({ counter }) {
   return (

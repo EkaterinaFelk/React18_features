@@ -14,10 +14,13 @@
     cursor: pointer;
     text-decoration: none;
 }
-.app-menu__item a {
+.app-menu__item {
     color: white;
     text-decoration: none;
 }
-.app-menu__item a:hover {
+.app-menu__item:hover {
+    color:black;
+}
+.app-menu__item-active {
     color:black;
 }

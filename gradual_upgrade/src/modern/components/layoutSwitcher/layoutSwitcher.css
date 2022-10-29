@@ -1,0 +1,16 @@
+.app-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    padding: 5px;
+}
+.app-layout:hover {
+    background-color: rgba(240, 248, 255, 0.318);
+    border-radius: 10px;
+}
+
+.app-layout__img {
+    height: 30px;
+    width: 30px;
+}

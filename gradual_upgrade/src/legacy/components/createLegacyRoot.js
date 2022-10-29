@@ -9,7 +9,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ThemeContext from './shared/ThemeContext';
+import ThemeContext from '../shared/ThemeContext';
 
 // Note: this is a semi-private API, but it's ok to use it
 // if we never inspect the values, and only pass them through.

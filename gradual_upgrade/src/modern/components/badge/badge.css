@@ -1,9 +1,8 @@
 .app-badge {
     display: flex;
-    flex: 1 1 200px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100px;
     color: white;
 }
 

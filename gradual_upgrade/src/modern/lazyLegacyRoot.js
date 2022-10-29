@@ -27,7 +27,7 @@ export default function lazyLegacyRoot(getLegacyComponent) {
 
   return function Wrapper(props) {
     const createLegacyRoot = readModule(rendererModule, () =>
-      import('../legacy/createLegacyRoot')
+      import('../legacy/components/createLegacyRoot')
     ).default;
     const Component = readModule(componentModule, getLegacyComponent).default;
     const containerRef = useRef(null);

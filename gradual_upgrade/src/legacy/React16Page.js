@@ -1,11 +1,8 @@
-import React from 'react';
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect } from 'react';
 import Disclaimer from './shared/disclaimer/disclaimer';
-import PetsList from './petsList/petsList';
+import PetsList from './components/petsList/petsList';
 
-const React16Page = memo(({ counter, dispatch }) => {
-  //const theme = useContext(ThemeContext);
-
+const React16Page = memo(() => {
   useEffect(() => console.log('React16Page mount'), []);
 
   return (
