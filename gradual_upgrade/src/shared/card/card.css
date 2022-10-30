@@ -1,12 +1,14 @@
 .app-card {
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(rgba(167, 169, 169, 0.371), white);
+    background: linear-gradient(var(--color), white);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .app-card:hover{
-    background: linear-gradient(white, rgba(196, 232, 234, 0.371));
+    outline: black solid 1px;
 }
 .app-card__type {
     font-weight: 600;
@@ -17,4 +19,20 @@
 }
 .app-card__age {
     color: gray;
+    margin: 3px 0;
+}
+.app-card__btn {
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: black;
+    font-weight: 600;
+    max-width: 300px;
+    margin: 10px auto 0;
+    width: 100%;
+}
+.app-card__btn:hover {
+    background-color: blue;
+    color: white;
 }

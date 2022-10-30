@@ -11,7 +11,7 @@ import generateData from '../api/generator';
 import lazyLegacyRoot from './lazyLegacyRoot';
 
 const App = memo(() => {
-  const [theme, setTheme] = useState('list');
+  const [theme, setTheme] = useState('grid');
 
   useEffect(() => console.log('App mount'), []);
 
