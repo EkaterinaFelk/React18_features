@@ -9,9 +9,11 @@ const root = createRoot(document.getElementById('root'));
 
 //Strict mode renders twice intentionslly - react doc
 root.render(
-  <StrictMode>
+  <>
+    {/*<StrictMode>*/}
     <Provider store={store}>
       <App />
     </Provider>
-  </StrictMode>
+    {/*</StrictMode>*/}
+  </>
 );

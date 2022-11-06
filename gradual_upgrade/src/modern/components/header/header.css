@@ -13,3 +13,10 @@
 .app-header__actions {
     display: flex;
 }
+.header__generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    color: white;
+}

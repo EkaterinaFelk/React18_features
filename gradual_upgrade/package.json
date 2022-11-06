@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@redux-devtools/extension": "^3.2.3",
     "json-server": "^0.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "8.0.4",
     "react-router-dom": "6.4.2",
     "react-scripts": "5.0.1",
     "redux": "4.0.5",
