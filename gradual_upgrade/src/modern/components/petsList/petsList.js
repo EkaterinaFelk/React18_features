@@ -5,8 +5,6 @@ import {
   useState,
   useCallback,
   useContext,
-  useMemo,
-  useRef,
   useDeferredValue,
   useTransition
 } from 'react';
@@ -24,7 +22,7 @@ const PetsList = memo(() => {
   const dispatch = useDispatch();
 
   const pets = useSelector((state) => state.pets.data);
-  const deferredPets = useDeferredValue(pets);
+  const deferredPets = useDeferredValue(pets); // time delay depends on count of elements
 
   const loading = useSelector((state) => state.pets.loading);
   const [filteredPets, setFilteredPets] = useState([]);
@@ -41,14 +39,15 @@ const PetsList = memo(() => {
 
   useEffect(() => {
     if (deferredSearchValue === '') {
-      setFilteredPets(orderedPets);
+      setFilteredPets(deferredPets);
     }
-  }, [deferredSearchValue, orderedPets]);
+  }, [deferredSearchValue, deferredPets]);
 
   useEffect(() => {
-    const orderedPets = deferredPets.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
+    console.log('sort');
+    const orderedPets = filteredPets.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
     setOrderedPets(orderedPets);
-  }, [deferredPets]);
+  }, [filteredPets]);
 
   const filterPets = useCallback(
     (search) => {
@@ -58,7 +57,7 @@ const PetsList = memo(() => {
             id.toString().includes(search) || name.includes(search) || type.includes(search)
         );
         console.log('filter', search);
-        setFilteredPets(_filteredPets);
+        startTransition(() => setFilteredPets(_filteredPets));
       }
     },
     [deferredPets]
@@ -94,7 +93,7 @@ const PetsList = memo(() => {
       <input typr="search" value={searchValue} onChange={handleFilter} />
       <div className={cn('app-pets', { 'app-pets__grid': theme === 'grid' })}>
         {(loading || isPending) && <Spinner />}
-        {filteredPets.map((pet) => (
+        {orderedPets.map((pet) => (
           <Card key={pet.id} pet={pet} onAdd={handleAdd} />
         ))}
       </div>

@@ -1,9 +1,11 @@
 import React, { memo, useState, useEffect, useMemo, useCallback } from 'react';
 import StatusBar from '../../../shared/statusBar/statusBar';
+import { requestInterval } from '../../../shared/utils';
 import { getRandomInt } from '../../../api/generator';
-import './card.css';
 import { ACTIONS } from '../../../constants/actions';
 import { useDispatch } from 'react-redux';
+
+import './card.css';
 
 const initialStatus = 100;
 const colorMap = {
@@ -111,19 +113,16 @@ const Card = memo(({ pet, onAdd }) => {
   );
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    const { clear } = requestInterval(() => {
       const action = ACTIONS[getRandomInt(0, ACTIONS.length)];
       doAction(action);
 
       //setAction(action) // batching is working in useEffect
     }, 5000);
     if (feed <= 10 || fun <= 10 || sleep <= 10 || toilet <= 10 || attention <= 10) {
-      clearInterval(intervalId);
+      clear();
     }
-    return () => {
-      console.log('clear interval!');
-      clearInterval(intervalId);
-    };
+    return () => clear();
   }, [attention, doAction, feed, fun, sleep, toilet]);
 
   // batching is working in useEffect
@@ -133,60 +132,65 @@ const Card = memo(({ pet, onAdd }) => {
 */
 
   useEffect(() => {
-    let intervalId;
+    let clearInterval;
     if (fun >= 0) {
-      intervalId = setInterval(
+      const { clear } = requestInterval(
         () => setFun((value) => value - settingsFun.diff),
         settingsFun.interval
       );
+      clearInterval = clear;
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval && clearInterval();
   }, [fun, settingsFun.diff, settingsFun.interval]);
 
-  /*useEffect(() => {
-    let intervalId;
+  useEffect(() => {
+    let clearInterval;
     if (feed >= 0) {
-      intervalId = setInterval(
+      const { clear } = requestInterval(
         () => setFeed((value) => value - settingsFeed.diff),
         settingsFeed.interval
       );
+      clearInterval = clear;
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval && clearInterval();
   }, [feed, settingsFeed.diff, settingsFeed.interval]);
 
   useEffect(() => {
-    let intervalId;
+    let clearInterval;
     if (sleep >= 0) {
-      intervalId = setInterval(
+      const { clear } = requestInterval(
         () => setSleep((value) => value - settingsSleep.diff),
         settingsSleep.interval
       );
+      clearInterval = clear;
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval && clearInterval();
   }, [settingsSleep.diff, settingsSleep.interval, sleep]);
 
   useEffect(() => {
-    let intervalId;
+    let clearInterval;
     if (toilet >= 0) {
-      intervalId = setInterval(
+      const { clear } = requestInterval(
         () => setToilet((value) => value - settingsToilet.diff),
         settingsToilet.interval
       );
+      clearInterval = clear;
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval && clearInterval();
   }, [settingsToilet.diff, settingsToilet.interval, toilet]);
 
   useEffect(() => {
-    let intervalId;
+    let clearInterval;
     if (attention >= 0) {
-      intervalId = setInterval(
+      const { clear } = requestInterval(
         () => setAttention((value) => value - settingsAttention.diff),
         settingsAttention.interval
       );
+      clearInterval = clear;
     }
-    return () => clearInterval(intervalId);
+    return () => clearInterval && clearInterval();
   }, [attention, settingsAttention.diff, settingsAttention.interval]);
-*/
+
   const statusValues = useMemo(
     () => ({ fun, feed, sleep, toilet, attention }),
     [attention, feed, fun, sleep, toilet]
@@ -225,12 +229,15 @@ const Card = memo(({ pet, onAdd }) => {
   );
 
   const handleAdd = useCallback(() => {
-    onAdd();
-    setFun(initialStatus);
-    setFeed(initialStatus);
-    setAttention(initialStatus);
-    setSleep(initialStatus);
-    setToilet(initialStatus);
+    // for batching feature
+    setTimeout(() => {
+      onAdd();
+      setFun(initialStatus);
+      setFeed(initialStatus);
+      setAttention(initialStatus);
+      setSleep(initialStatus);
+      setToilet(initialStatus);
+    }, 0);
   }, [onAdd]);
 
   //console.log(`${React.version} card.component.js update`);

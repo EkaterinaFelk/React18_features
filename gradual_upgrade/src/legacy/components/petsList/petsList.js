@@ -12,7 +12,7 @@ import './petsList.css';
 const PetsList = memo(() => {
   const { theme } = useContext(ThemeContext);
   const dispatch = useDispatch();
-  const pets = useSelector((state) => state.pets);
+  const pets = useSelector((state) => state.pets.data);
   const [filteredPets, setFilteredPets] = useState([]);
   const [filter, setFilter] = useState('');
 
