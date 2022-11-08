@@ -1,14 +1,24 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { composeWithDevTools } from '@redux-devtools/extension';
 
-function pets(state = [], action) {
+function pets(state = { data: [], loading: false }, action) {
   switch (action.type) {
+    case 'loadingStart':
+      return { ...state, loading: true };
+    case 'loadingFinish':
+      return { ...state, loading: false };
     case 'loadPets':
-      return action.data.map((pet) => ({ ...pet, totalScore: 100 }));
+      return {
+        ...state,
+        data: action.data.map((pet) => ({ ...pet, totalScore: 100 }))
+      };
     case 'setTotalScore':
-      return state.map((pet) =>
-        pet.id === action.data.id ? { ...pet, totalScore: action.data.totalScore } : pet
-      );
+      return {
+        ...state,
+        data: state.data.map((pet) =>
+          pet.id === action.data.id ? { ...pet, totalScore: action.data.totalScore } : pet
+        )
+      };
     default:
       return state;
   }

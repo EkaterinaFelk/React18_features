@@ -120,7 +120,10 @@ const Card = memo(({ pet, onAdd }) => {
     if (feed <= 10 || fun <= 10 || sleep <= 10 || toilet <= 10 || attention <= 10) {
       clearInterval(intervalId);
     }
-    return () => clearInterval(intervalId);
+    return () => {
+      console.log('clear interval!');
+      clearInterval(intervalId);
+    };
   }, [attention, doAction, feed, fun, sleep, toilet]);
 
   // batching is working in useEffect
@@ -140,7 +143,7 @@ const Card = memo(({ pet, onAdd }) => {
     return () => clearInterval(intervalId);
   }, [fun, settingsFun.diff, settingsFun.interval]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     let intervalId;
     if (feed >= 0) {
       intervalId = setInterval(
@@ -183,7 +186,7 @@ const Card = memo(({ pet, onAdd }) => {
     }
     return () => clearInterval(intervalId);
   }, [attention, settingsAttention.diff, settingsAttention.interval]);
-
+*/
   const statusValues = useMemo(
     () => ({ fun, feed, sleep, toilet, attention }),
     [attention, feed, fun, sleep, toilet]

@@ -1,3 +1,5 @@
+import { useId } from 'react';
+
 const NAMES = [
   'Monday',
   'Tuesday',
@@ -52,9 +54,9 @@ function getRandomDiff(min, max) {
 }
 
 export default function generateData(length) {
-  return Array.from({ length }, (_, i) => {
+  return Array.from({ length }, () => {
     return {
-      id: i,
+      id: useId(),
       name: NAMES[getRandomInt(0, NAMES.length)],
       age: getRandomInt(0, 20),
       type: TYPES[getRandomInt(0, TYPES.length)],

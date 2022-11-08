@@ -18,7 +18,7 @@ const PetsList = memo(() => {
 
   useEffect(() => {
     let petsList = pets;
-    if (filter !== ''){
+    if (filter !== '') {
       const _filteredPets = pets.filter(
         ({ name, type, id }) =>
           id.toString().includes(filter) || name.includes(filter) || type.includes(filter)
@@ -50,13 +50,10 @@ const PetsList = memo(() => {
 
   const handleAdd = useCallback(() => dispatch({ type: 'increment' }), [dispatch]);
 
-  const handleFilter = useCallback(
-    (event) => {
-        const search = event.target.value;
-        setFilter(search);
-    },
-    []
-  );
+  const handleFilter = useCallback((event) => {
+    const search = event.target.value;
+    setFilter(search);
+  }, []);
 
   return (
     <>
