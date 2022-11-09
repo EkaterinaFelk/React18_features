@@ -7,9 +7,13 @@ const StatusBar = memo(({ title, value }) => {
       <div className="app-status-bar__title">{title}</div>
       <div
         className="app-status-bar__bar"
-        style={value ? {
-          '--width': `${value.toFixed()}%`
-        }: {}}
+        style={
+          value && typeof value === 'number'
+            ? {
+                '--width': `${value.toFixed()}%`
+              }
+            : {}
+        }
       ></div>
     </div>
   );

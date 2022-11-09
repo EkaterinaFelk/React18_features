@@ -1,6 +1,21 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { composeWithDevTools } from '@redux-devtools/extension';
 
+//#region Action Creators
+export const createLoadPetsAction = (data) => {
+  return { type: 'loadPets', data };
+};
+export const createLoadingStartPetsAction = () => {
+  return { type: 'loadingStart' };
+};
+export const createLoadingFinishPetsAction = () => {
+  return { type: 'loadingFinish' };
+};
+export const createIncrementAction = () => {
+  return { type: 'increment' };
+};
+//#endregion Action Creators
+
 function pets(state = { data: [], loading: false }, action) {
   switch (action.type) {
     case 'loadingStart':

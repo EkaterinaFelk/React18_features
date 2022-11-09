@@ -1,11 +1,18 @@
 import React from 'react';
-import { memo, useEffect, useState, useCallback, useContext, Suspense, useMemo } from 'react';
+import { memo, useEffect, useMemo, useState, useCallback, useContext } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
 import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';
 import * as cn from 'classnames';
 import Spinner from '../../shared/loading/loading';
+import { orderPets, searchPets } from '../../../utils';
+import {
+  createLoadPetsAction,
+  createIncrementAction,
+  createLoadingFinishPetsAction,
+  createLoadingStartPetsAction
+} from '../../../store';
 
 import './petsList.css';
 
@@ -13,53 +20,70 @@ const PetsList = memo(() => {
   const { theme } = useContext(ThemeContext);
   const dispatch = useDispatch();
   const pets = useSelector((state) => state.pets.data);
+  const loading = useSelector((state) => state.pets.loading);
+
   const [filteredPets, setFilteredPets] = useState([]);
-  const [filter, setFilter] = useState('');
+  const [orderedPets, setOrderedPets] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
+
+  const isEmptySearch = useMemo(() => searchValue === '', [searchValue]);
+
+  const loadPets = useCallback((data) => dispatch(createLoadPetsAction(data)), [dispatch]);
+  const startLoading = useCallback(() => dispatch(createLoadingStartPetsAction()), [dispatch]);
+  const finishLoading = useCallback(() => dispatch(createLoadingFinishPetsAction()), [dispatch]);
+  const handleAdd = useCallback(() => dispatch(createIncrementAction()), [dispatch]);
 
   useEffect(() => {
-    let petsList = pets;
-    if (filter !== '') {
-      const _filteredPets = pets.filter(
-        ({ name, type, id }) =>
-          id.toString().includes(filter) || name.includes(filter) || type.includes(filter)
-      );
-      petsList = _filteredPets.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
+    if (isEmptySearch) {
+      setFilteredPets(pets);
     }
-    const orderedPets = petsList.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
-    setFilteredPets(orderedPets);
-  }, [filter, pets]);
+  }, [pets, isEmptySearch]);
 
   useEffect(() => {
-    const orderedPets = pets.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
-    setFilteredPets(orderedPets);
-  }, [pets]);
+    const _filteredPets = [...filteredPets];
+    orderPets(_filteredPets);
+    setOrderedPets(_filteredPets);
+  }, [filteredPets]);
 
-  const loadPets = useCallback((data) => dispatch({ type: 'loadPets', data }), [dispatch]);
+  const filterPets = useCallback(
+    (search) => {
+      if (search !== '') {
+        const foundPets = searchPets(pets, search);
+        setFilteredPets(foundPets);
+      }
+    },
+    [pets]
+  );
 
   useEffect(() => {
+    filterPets(searchValue);
+  }, [searchValue, filterPets]);
+
+  useEffect(() => {
+    startLoading();
     const ac = new AbortController();
     const getPets = async () => {
       const petsFromServer = await fetchPets(ac.signal);
       loadPets(petsFromServer);
+      finishLoading();
     };
 
     getPets();
 
     return () => ac.abort();
-  }, [loadPets]);
-
-  const handleAdd = useCallback(() => dispatch({ type: 'increment' }), [dispatch]);
+  }, [finishLoading, loadPets, startLoading]);
 
   const handleFilter = useCallback((event) => {
     const search = event.target.value;
-    setFilter(search);
+    setSearchValue(search);
   }, []);
 
   return (
     <>
-      <input typr="search" onChange={handleFilter} />
+      <input typr="search" value={searchValue} onChange={handleFilter} />
       <div className={cn('app-pets', { 'app-pets__grid': theme === 'grid' })}>
-        {filteredPets.map((pet) => (
+        {loading && <Spinner />}
+        {orderedPets.map((pet) => (
           <Card key={pet.id} pet={pet} onAdd={handleAdd} />
         ))}
       </div>

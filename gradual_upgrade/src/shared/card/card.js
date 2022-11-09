@@ -1,28 +1,100 @@
-import React, { memo, useState, useEffect, useMemo, useCallback } from 'react';
+import React, { memo, useState, useEffect, useMemo, useCallback, useReducer } from 'react';
 import StatusBar from '../../../shared/statusBar/statusBar';
-import { requestInterval } from '../../../shared/utils';
+import {
+  requestInterval,
+  createPropertyInterval,
+  getPetSettings,
+  isReadyToAction,
+  isReadyToCancelAction
+} from '../../../utils';
 import { getRandomInt } from '../../../api/generator';
-import { ACTIONS } from '../../../constants/actions';
 import { useDispatch } from 'react-redux';
+import {
+  ACTIONS,
+  ADDED_DIFF,
+  COLOR_KEYS,
+  INITIAL_STATUS,
+  COLOR_MAP
+} from '../../../constants/petProperties';
 
 import './card.css';
 
-const initialStatus = 100;
-const colorMap = {
-  10: '#f2612c6f',
-  20: '#f29c2c6f',
-  50: '#eff16e6f',
-  100: '#6ef1b46f'
-};
-const colorKeys = Object.keys(colorMap).map((val) => parseInt(val, 10));
-const addedDiff = 10;
-
 const Card = memo(({ pet, onAdd }) => {
-  const [fun, setFun] = useState(initialStatus);
-  const [feed, setFeed] = useState(initialStatus);
-  const [sleep, setSleep] = useState(initialStatus);
-  const [toilet, setToilet] = useState(initialStatus);
-  const [attention, setAttention] = useState(initialStatus);
+  //todo: check performance with useReducer
+  //#region useReducer
+  /* const [state, dispatchState] = useReducer(reducer, {
+    fun: INITIAL_STATUS,
+    feed: INITIAL_STATUS,
+    sleep: INITIAL_STATUS,
+    toilet: INITIAL_STATUS,
+    attention: INITIAL_STATUS
+  });
+
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'feed': {
+        return {
+          ...state,
+          feed: state.feed + ADDED_DIFF,
+          toilet: state.toilet - settingsToilet.diff,
+          sleep: state.sleep - settingsSleep.diff,
+          attention: state.attention + settingsAttention.diff,
+          fun: state.fun - settingsFun.diff
+        };
+      }
+      case 'fun': {
+        return {
+          ...state,
+          fun: state.fun + ADDED_DIFF,
+          feed: state.feed - settingsFeed.diff,
+          toilet: state.toilet - settingsToilet.diff,
+          sleep: state.sleep - settingsSleep.diff,
+          attention: state.attention + settingsAttention.diff
+        };
+      }
+      case 'sleep': {
+        return {
+          ...state,
+          sleep: state.sleep + ADDED_DIFF,
+          fun: state.fun - settingsFun.diff,
+          feed: state.feed - settingsFeed.diff,
+          toilet: state.toilet - settingsToilet.diff,
+          attention: state.attention + settingsAttention.diff
+        };
+      }
+      case 'toilet': {
+        return {
+          ...state,
+          toilet: state.toilet + ADDED_DIFF,
+          sleep: state.sleep - settingsSleep.diff,
+          fun: state.fun - settingsFun.diff,
+          feed: state.feed - settingsFeed.diff,
+          attention: state.attention - settingsAttention.diff
+        };
+      }
+      case 'attention': {
+        return {
+          ...state,
+          attention: state.attention + ADDED_DIFF,
+          toilet: state.toilet - settingsToilet.diff,
+          sleep: state.sleep - settingsSleep.diff,
+          fun: state.fun + settingsFun.diff,
+          feed: state.feed - settingsFeed.diff,
+        };
+      }
+      default:
+        return state;
+    }
+  } */
+  //#endregion useReducer
+
+  //#region useState
+  const [fun, setFun] = useState(INITIAL_STATUS);
+  const [feed, setFeed] = useState(INITIAL_STATUS);
+  const [sleep, setSleep] = useState(INITIAL_STATUS);
+  const [toilet, setToilet] = useState(INITIAL_STATUS);
+  const [attention, setAttention] = useState(INITIAL_STATUS);
+  //#endregion useState
 
   const dispatch = useDispatch();
   const setTotalScore = useCallback(
@@ -32,65 +104,73 @@ const Card = memo(({ pet, onAdd }) => {
 
   //const [action, setAction] = useState();
 
-  const settingsFun = useMemo(
-    () => pet.statuses.find((status) => status.status === 'fun'),
-    [pet.statuses]
-  );
-  const settingsFeed = useMemo(
-    () => pet.statuses.find((status) => status.status === 'feed'),
-    [pet.statuses]
-  );
-  const settingsSleep = useMemo(
-    () => pet.statuses.find((status) => status.status === 'sleep'),
-    [pet.statuses]
-  );
-  const settingsToilet = useMemo(
-    () => pet.statuses.find((status) => status.status === 'toilet'),
-    [pet.statuses]
-  );
+  const settingsFun = useMemo(() => getPetSettings(pet.statuses, 'fun'), [pet.statuses]);
+  const settingsFeed = useMemo(() => getPetSettings(pet.statuses, 'feed'), [pet.statuses]);
+  const settingsSleep = useMemo(() => getPetSettings(pet.statuses, 'sleep'), [pet.statuses]);
+  const settingsToilet = useMemo(() => getPetSettings(pet.statuses, 'toilet'), [pet.statuses]);
   const settingsAttention = useMemo(
-    () => pet.statuses.find((status) => status.status === 'attention'),
+    () => getPetSettings(pet.statuses, 'attention'),
     [pet.statuses]
   );
 
   const doAction = useCallback(
     (action) => {
-      if (feed <= 90 && fun <= 90 && sleep <= 90 && toilet <= 90 && attention <= 90) {
+      if (isReadyToAction(feed, fun, sleep, toilet, attention)) {
         switch (action) {
           case 'feed':
-            setFeed((value) => value + addedDiff);
+            //#region useState
+            setFeed((value) => value + ADDED_DIFF);
             setToilet((value) => value - settingsToilet.diff);
             setSleep((value) => value - settingsSleep.diff);
             setAttention((value) => value + settingsAttention.diff);
             setFun((value) => value - settingsFun.diff);
+            //#endregion useState
+
+            //dispatchState({ type: 'feed' });
             break;
           case 'fun':
-            setFun((value) => value + addedDiff);
+            //#region useState
+            setFun((value) => value + ADDED_DIFF);
             setFeed((value) => value - settingsFeed.diff);
             setToilet((value) => value - settingsToilet.diff);
             setSleep((value) => value - settingsSleep.diff);
             setAttention((value) => value + settingsAttention.diff);
+            //#endregion useState
+
+            //dispatchState({ type: 'fun' });
             break;
           case 'sleep':
-            setSleep((value) => value + addedDiff);
+            //#region useState
+            setSleep((value) => value + ADDED_DIFF);
             setFun((value) => value - settingsFun.diff);
             setFeed((value) => value - settingsFeed.diff);
             setToilet((value) => value - settingsToilet.diff);
             setAttention((value) => value - settingsAttention.diff);
+            //#endregion useState
+
+            //dispatchState({ type: 'sleep' });
             break;
           case 'toilet':
-            setToilet((value) => value + addedDiff);
+            //#region useState
+            setToilet((value) => value + ADDED_DIFF);
             setSleep((value) => value - settingsSleep.diff);
             setFun((value) => value - settingsFun.diff);
             setFeed((value) => value - settingsFeed.diff);
             setAttention((value) => value - settingsAttention.diff);
+            //#endregion useState
+
+            //dispatchState({ type: 'toilet' });
             break;
           case 'attention':
-            setAttention((value) => value + addedDiff);
+            //#region useState
+            setAttention((value) => value + ADDED_DIFF);
             setToilet((value) => value - settingsToilet.diff);
             setSleep((value) => value - settingsSleep.diff);
             setFun((value) => value + settingsFun.diff);
             setFeed((value) => value - settingsFeed.diff);
+            //#endregion useState
+
+            //dispatchState({ type: 'attention' });
             break;
 
           default:
@@ -119,7 +199,7 @@ const Card = memo(({ pet, onAdd }) => {
 
       //setAction(action) // batching is working in useEffect
     }, 5000);
-    if (feed <= 10 || fun <= 10 || sleep <= 10 || toilet <= 10 || attention <= 10) {
+    if (isReadyToCancelAction(feed, fun, sleep, toilet, attention)) {
       clear();
     }
     return () => clear();
@@ -132,63 +212,48 @@ const Card = memo(({ pet, onAdd }) => {
 */
 
   useEffect(() => {
-    let clearInterval;
-    if (fun >= 0) {
-      const { clear } = requestInterval(
-        () => setFun((value) => value - settingsFun.diff),
-        settingsFun.interval
-      );
-      clearInterval = clear;
-    }
-    return () => clearInterval && clearInterval();
+    const clear = createPropertyInterval(
+      fun,
+      () => setFun((value) => value - settingsFun.diff),
+      settingsFun.interval
+    );
+    return () => clear();
   }, [fun, settingsFun.diff, settingsFun.interval]);
 
   useEffect(() => {
-    let clearInterval;
-    if (feed >= 0) {
-      const { clear } = requestInterval(
-        () => setFeed((value) => value - settingsFeed.diff),
-        settingsFeed.interval
-      );
-      clearInterval = clear;
-    }
-    return () => clearInterval && clearInterval();
+    const clear = createPropertyInterval(
+      feed,
+      () => setFeed((value) => value - settingsFeed.diff),
+      settingsFeed.interval
+    );
+    return () => clear();
   }, [feed, settingsFeed.diff, settingsFeed.interval]);
 
   useEffect(() => {
-    let clearInterval;
-    if (sleep >= 0) {
-      const { clear } = requestInterval(
-        () => setSleep((value) => value - settingsSleep.diff),
-        settingsSleep.interval
-      );
-      clearInterval = clear;
-    }
-    return () => clearInterval && clearInterval();
+    const clear = createPropertyInterval(
+      sleep,
+      () => setSleep((value) => value - settingsSleep.diff),
+      settingsSleep.interval
+    );
+    return () => clear();
   }, [settingsSleep.diff, settingsSleep.interval, sleep]);
 
   useEffect(() => {
-    let clearInterval;
-    if (toilet >= 0) {
-      const { clear } = requestInterval(
-        () => setToilet((value) => value - settingsToilet.diff),
-        settingsToilet.interval
-      );
-      clearInterval = clear;
-    }
-    return () => clearInterval && clearInterval();
+    const clear = createPropertyInterval(
+      toilet,
+      () => setToilet((value) => value - settingsToilet.diff),
+      settingsToilet.interval
+    );
+    return () => clear();
   }, [settingsToilet.diff, settingsToilet.interval, toilet]);
 
   useEffect(() => {
-    let clearInterval;
-    if (attention >= 0) {
-      const { clear } = requestInterval(
-        () => setAttention((value) => value - settingsAttention.diff),
-        settingsAttention.interval
-      );
-      clearInterval = clear;
-    }
-    return () => clearInterval && clearInterval();
+    const clear = createPropertyInterval(
+      attention,
+      () => setAttention((value) => value - settingsAttention.diff),
+      settingsAttention.interval
+    );
+    return () => clear();
   }, [attention, settingsAttention.diff, settingsAttention.interval]);
 
   const statusValues = useMemo(
@@ -197,7 +262,7 @@ const Card = memo(({ pet, onAdd }) => {
   );
 
   const totalScore = useMemo(
-    () => (100 * (fun + feed + sleep + attention + toilet)) / (initialStatus * 5),
+    () => (100 * (fun + feed + sleep + attention + toilet)) / (INITIAL_STATUS * 5),
     [attention, feed, fun, sleep, toilet]
   );
 
@@ -206,18 +271,18 @@ const Card = memo(({ pet, onAdd }) => {
   }, [setTotalScore, totalScore]);
 
   const scoreColor = useMemo(() => {
-    if (totalScore <= 100 && totalScore >= colorKeys[3]) {
-      return colorMap[colorKeys[3]];
-    } else if (totalScore <= colorKeys[3] && totalScore >= colorKeys[2]) {
-      return colorMap[colorKeys[3]];
-    } else if (totalScore <= colorKeys[2] && totalScore >= colorKeys[1]) {
-      return colorMap[colorKeys[2]];
-    } else if (totalScore <= colorKeys[1] && totalScore >= colorKeys[0]) {
-      return colorMap[colorKeys[1]];
-    } else if (totalScore <= colorKeys[0] && totalScore >= 0) {
-      return colorMap[colorKeys[0]];
+    if (totalScore <= INITIAL_STATUS && totalScore >= COLOR_KEYS[3]) {
+      return COLOR_MAP[COLOR_KEYS[3]];
+    } else if (totalScore <= COLOR_KEYS[3] && totalScore >= COLOR_KEYS[2]) {
+      return COLOR_MAP[COLOR_KEYS[3]];
+    } else if (totalScore <= COLOR_KEYS[2] && totalScore >= COLOR_KEYS[1]) {
+      return COLOR_MAP[COLOR_KEYS[2]];
+    } else if (totalScore <= COLOR_KEYS[1] && totalScore >= COLOR_KEYS[0]) {
+      return COLOR_MAP[COLOR_KEYS[1]];
+    } else if (totalScore <= COLOR_KEYS[0] && totalScore >= 0) {
+      return COLOR_MAP[COLOR_KEYS[0]];
     } else {
-      return colorMap[colorKeys[0]];
+      return COLOR_MAP[COLOR_KEYS[0]];
     }
   }, [totalScore]);
 
@@ -232,11 +297,11 @@ const Card = memo(({ pet, onAdd }) => {
     // for batching feature
     setTimeout(() => {
       onAdd();
-      setFun(initialStatus);
-      setFeed(initialStatus);
-      setAttention(initialStatus);
-      setSleep(initialStatus);
-      setToilet(initialStatus);
+      setFun(INITIAL_STATUS);
+      setFeed(INITIAL_STATUS);
+      setAttention(INITIAL_STATUS);
+      setSleep(INITIAL_STATUS);
+      setToilet(INITIAL_STATUS);
     }, 0);
   }, [onAdd]);
 

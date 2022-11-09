@@ -6,7 +6,8 @@ import {
   useCallback,
   useContext,
   useDeferredValue,
-  useTransition
+  useTransition,
+  useMemo
 } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
@@ -14,6 +15,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';
 import * as cn from 'classnames';
 import Spinner from '../../shared/loading/loading';
+import { orderPets, searchPets } from '../../../utils';
+import {
+  createLoadPetsAction,
+  createIncrementAction,
+  createLoadingFinishPetsAction,
+  createLoadingStartPetsAction
+} from '../../../store';
 
 import './petsList.css';
 
@@ -33,31 +41,31 @@ const PetsList = memo(() => {
 
   const [isPending, startTransition] = useTransition();
 
-  const loadPets = useCallback((data) => dispatch({ type: 'loadPets', data }), [dispatch]);
-  const startLoading = useCallback(() => dispatch({ type: 'loadingStart' }), [dispatch]);
-  const finishLoading = useCallback(() => dispatch({ type: 'loadingFinish' }), [dispatch]);
+  const isEmptySearch = useMemo(() => deferredSearchValue === '', [deferredSearchValue]);
+
+  const loadPets = useCallback((data) => dispatch(createLoadPetsAction(data)), [dispatch]);
+  const startLoading = useCallback(() => dispatch(createLoadingStartPetsAction()), [dispatch]);
+  const finishLoading = useCallback(() => dispatch(createLoadingFinishPetsAction()), [dispatch]);
+  const handleAdd = useCallback(() => dispatch(createIncrementAction()), [dispatch]);
 
   useEffect(() => {
-    if (deferredSearchValue === '') {
+    if (isEmptySearch) {
       setFilteredPets(deferredPets);
     }
-  }, [deferredSearchValue, deferredPets]);
+  }, [deferredPets, isEmptySearch]);
 
   useEffect(() => {
-    console.log('sort');
-    const orderedPets = filteredPets.sort((pet1, pet2) => pet1.totalScore - pet2.totalScore);
-    setOrderedPets(orderedPets);
+    const _filteredPets = [...filteredPets];
+    orderPets(_filteredPets);
+    setOrderedPets(_filteredPets);
   }, [filteredPets]);
 
   const filterPets = useCallback(
     (search) => {
       if (search !== '') {
-        const _filteredPets = deferredPets.filter(
-          ({ name, type, id }) =>
-            id.toString().includes(search) || name.includes(search) || type.includes(search)
-        );
-        console.log('filter', search);
-        startTransition(() => setFilteredPets(_filteredPets));
+        const foundPets = searchPets(deferredPets, search);
+        // not urgent render
+        startTransition(() => setFilteredPets(foundPets));
       }
     },
     [deferredPets]
@@ -80,8 +88,6 @@ const PetsList = memo(() => {
 
     return () => ac.abort();
   }, [finishLoading, loadPets, startLoading]);
-
-  const handleAdd = useCallback(() => dispatch({ type: 'increment' }), [dispatch]);
 
   const handleFilter = useCallback((event) => {
     const search = event.target.value;

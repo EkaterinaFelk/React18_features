@@ -7,6 +7,7 @@ import ThemeContext from '../../shared/ThemeContext';
 export default function LayoutSwitcher() {
   const { theme, setTheme } = useContext(ThemeContext);
   const icon = useMemo(() => (theme === 'list' ? gridLayout : listLayout), [theme]);
+
   const changeLayout = useCallback(() => {
     if (theme === 'list') {
       setTheme('grid');

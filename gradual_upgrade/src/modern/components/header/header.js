@@ -16,7 +16,7 @@ export default function Header() {
   const handleGenerateData = useCallback(() => {
     const data = generateData(100);
     const generatePets = async () => {
-      const generatedPets = await addPets(data);
+      await addPets(data);
     };
     generatePets();
   }, []);

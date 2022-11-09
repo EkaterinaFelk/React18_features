@@ -8,7 +8,6 @@ export default function Layout(props) {
     <div className="app-wrapper">
       <Header />
       <main className="app-content">{props.children}</main>
-      {/*isModal && <ModalWindow />*/}
     </div>
   );
 }
