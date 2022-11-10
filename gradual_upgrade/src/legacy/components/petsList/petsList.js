@@ -2,6 +2,8 @@ import React from 'react';
 import { memo, useEffect, useMemo, useState, useCallback, useContext } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
+import CardWithReducer from '../../shared/card/cardWithReducer';
+import CardWithEffect from '../../shared/card/cardWithEffect';
 import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';
 import * as cn from 'classnames';
@@ -85,6 +87,8 @@ const PetsList = memo(() => {
         {loading && <Spinner />}
         {orderedPets.map((pet) => (
           <Card key={pet.id} pet={pet} onAdd={handleAdd} />
+          /*<CardWithReducer key={pet.id} pet={pet} onAdd={handleAdd} />*/
+          /*<CardWithEffect key={pet.id} pet={pet} onAdd={handleAdd} />*/
         ))}
       </div>
     </>

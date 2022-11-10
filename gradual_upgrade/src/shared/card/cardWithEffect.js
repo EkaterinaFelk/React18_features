@@ -19,7 +19,7 @@ import {
 
 import './card.css';
 
-const Card = memo(({ pet, onAdd }) => {
+const CardWithEffect = memo(({ pet, onAdd }) => {
   const [fun, setFun] = useState(INITIAL_STATUS);
   const [feed, setFeed] = useState(INITIAL_STATUS);
   const [sleep, setSleep] = useState(INITIAL_STATUS);
@@ -31,6 +31,8 @@ const Card = memo(({ pet, onAdd }) => {
     (totalScore) => dispatch({ type: 'setTotalScore', data: { id: pet.id, totalScore } }),
     [dispatch, pet.id]
   );
+
+  const [action, setAction] = useState();
 
   const settingsFun = useMemo(() => getPetSettings(pet.statuses, 'fun'), [pet.statuses]);
   const settingsFeed = useMemo(() => getPetSettings(pet.statuses, 'feed'), [pet.statuses]);
@@ -101,15 +103,21 @@ const Card = memo(({ pet, onAdd }) => {
   );
 
   useEffect(() => {
+    // batching is working in useEffect
     const { clear } = requestInterval(() => {
       const action = ACTIONS[getRandomInt(0, ACTIONS.length)];
-      doAction(action);
+      setAction(action); // batching is working in useEffect
     }, 5000);
     if (isReadyToCancelAction(feed, fun, sleep, toilet, attention)) {
       clear();
     }
     return () => clear();
   }, [attention, doAction, feed, fun, sleep, toilet]);
+
+  // batching is working in useEffect
+  useEffect(() => {
+    doAction(action);
+  }, []);
 
   useEffect(() => {
     const clear = createPropertyInterval(
@@ -226,4 +234,4 @@ const Card = memo(({ pet, onAdd }) => {
   );
 });
 
-export default Card;
+export default CardWithEffect;
