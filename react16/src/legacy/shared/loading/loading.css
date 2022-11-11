@@ -1,0 +1,19 @@
+.app-loading {
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(171, 163, 165, 0.393);
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.app-loading__img {
+    width: 30px;
+    height: 30px;
+}
+
+
