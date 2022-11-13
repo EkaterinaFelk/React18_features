@@ -1,1952 +1,621 @@
 {
-  "pets": [
+  "pets": {
+    "data": [
       {
         "id": 0,
-        "name": "May",
+        "name": "Thursday",
         "age": 18,
         "type": "butterfly",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "orange",
+        "color": "yellow",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4169,
-            "diff": "1.01"
+            "interval": 3913,
+            "diff": "4.11"
           },
           {
             "status": "feed",
-            "interval": 2176,
-            "diff": "4.54"
+            "interval": 4466,
+            "diff": "2.21"
           },
           {
             "status": "sleep",
-            "interval": 3788,
-            "diff": "4.00"
+            "interval": 5066,
+            "diff": "4.80"
           },
           {
             "status": "toilet",
-            "interval": 1155,
-            "diff": "1.12"
+            "interval": 1344,
+            "diff": "3.47"
           },
           {
             "status": "attention",
-            "interval": 1469,
-            "diff": "3.68"
+            "interval": 1395,
+            "diff": "4.44"
           }
         ]
       },
       {
         "id": 1,
-        "name": "Saturday",
-        "age": 8,
-        "type": "butterfly",
+        "name": "March",
+        "age": 4,
+        "type": "rabbit",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "orange",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4232,
-            "diff": "4.07"
+            "interval": 4336,
+            "diff": "1.29"
           },
           {
             "status": "feed",
-            "interval": 2995,
-            "diff": "4.97"
+            "interval": 3797,
+            "diff": "3.23"
           },
           {
             "status": "sleep",
-            "interval": 6990,
-            "diff": "2.42"
+            "interval": 5885,
+            "diff": "1.42"
           },
           {
             "status": "toilet",
-            "interval": 1574,
-            "diff": "1.06"
+            "interval": 1837,
+            "diff": "3.22"
           },
           {
             "status": "attention",
-            "interval": 2618,
-            "diff": "1.19"
+            "interval": 2386,
+            "diff": "1.37"
           }
         ]
       },
       {
         "id": 2,
-        "name": "March",
-        "age": 17,
-        "type": "horse",
+        "name": "Night",
+        "age": 10,
+        "type": "squirrel",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "violet",
+        "color": "blue",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3359,
-            "diff": "2.80"
+            "interval": 3196,
+            "diff": "4.87"
           },
           {
             "status": "feed",
-            "interval": 2162,
-            "diff": "1.84"
+            "interval": 4396,
+            "diff": "3.85"
           },
           {
             "status": "sleep",
-            "interval": 4489,
-            "diff": "3.35"
+            "interval": 4780,
+            "diff": "4.97"
           },
           {
             "status": "toilet",
-            "interval": 2514,
-            "diff": "1.85"
+            "interval": 1994,
+            "diff": "2.29"
           },
           {
             "status": "attention",
-            "interval": 1956,
-            "diff": "4.85"
+            "interval": 2665,
+            "diff": "2.10"
           }
         ]
       },
       {
         "id": 3,
-        "name": "Friday",
-        "age": 1,
-        "type": "butterfly",
+        "name": "October",
+        "age": 9,
+        "type": "dog",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "blue",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4866,
-            "diff": "3.22"
+            "interval": 4224,
+            "diff": "2.99"
           },
           {
             "status": "feed",
-            "interval": 3904,
-            "diff": "3.62"
+            "interval": 4901,
+            "diff": "4.38"
           },
           {
             "status": "sleep",
-            "interval": 2542,
-            "diff": "1.87"
+            "interval": 5859,
+            "diff": "4.32"
           },
           {
             "status": "toilet",
-            "interval": 2060,
-            "diff": "2.80"
+            "interval": 2849,
+            "diff": "2.24"
           },
           {
             "status": "attention",
-            "interval": 2187,
-            "diff": "2.45"
+            "interval": 2212,
+            "diff": "2.29"
           }
         ]
       },
       {
         "id": 4,
-        "name": "July",
-        "age": 18,
+        "name": "Night",
+        "age": 17,
         "type": "butterfly",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "yellow",
+        "color": "orange",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3859,
-            "diff": "4.25"
+            "interval": 2619,
+            "diff": "4.44"
           },
           {
             "status": "feed",
-            "interval": 4025,
-            "diff": "1.80"
+            "interval": 5242,
+            "diff": "1.82"
           },
           {
             "status": "sleep",
-            "interval": 2012,
-            "diff": "3.87"
+            "interval": 3708,
+            "diff": "3.35"
           },
           {
             "status": "toilet",
-            "interval": 2906,
-            "diff": "1.44"
+            "interval": 2802,
+            "diff": "1.75"
           },
           {
             "status": "attention",
-            "interval": 2493,
-            "diff": "1.63"
+            "interval": 2699,
+            "diff": "2.36"
           }
         ]
       },
       {
         "id": 5,
-        "name": "November",
-        "age": 1,
-        "type": "squirrel",
+        "name": "Night",
+        "age": 4,
+        "type": "pigeon",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "purple",
+        "color": "indigo",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2786,
-            "diff": "3.91"
+            "interval": 3011,
+            "diff": "3.87"
           },
           {
             "status": "feed",
-            "interval": 4956,
-            "diff": "3.67"
+            "interval": 5036,
+            "diff": "3.81"
           },
           {
             "status": "sleep",
-            "interval": 4918,
-            "diff": "1.92"
+            "interval": 3769,
+            "diff": "3.33"
           },
           {
             "status": "toilet",
-            "interval": 1723,
-            "diff": "2.21"
+            "interval": 1320,
+            "diff": "2.61"
           },
           {
             "status": "attention",
-            "interval": 1970,
-            "diff": "3.03"
+            "interval": 2374,
+            "diff": "4.39"
           }
         ]
       },
       {
         "id": 6,
-        "name": "Thursday",
-        "age": 4,
+        "name": "October",
+        "age": 15,
         "type": "owl",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "green",
+        "color": "purple",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3221,
-            "diff": "4.08"
+            "interval": 4810,
+            "diff": "3.05"
           },
           {
             "status": "feed",
-            "interval": 4566,
-            "diff": "4.99"
+            "interval": 2178,
+            "diff": "4.69"
           },
           {
             "status": "sleep",
-            "interval": 3617,
-            "diff": "3.29"
+            "interval": 2981,
+            "diff": "4.99"
           },
           {
             "status": "toilet",
-            "interval": 2542,
-            "diff": "3.52"
+            "interval": 2941,
+            "diff": "2.21"
           },
           {
             "status": "attention",
-            "interval": 1713,
-            "diff": "3.54"
+            "interval": 1564,
+            "diff": "3.12"
           }
         ]
       },
       {
         "id": 7,
-        "name": "Wednesday",
-        "age": 15,
-        "type": "snake",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "blue",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4844,
-            "diff": "1.07"
-          },
-          {
-            "status": "feed",
-            "interval": 4776,
-            "diff": "3.68"
-          },
-          {
-            "status": "sleep",
-            "interval": 2238,
-            "diff": "1.12"
-          },
-          {
-            "status": "toilet",
-            "interval": 1661,
-            "diff": "2.44"
-          },
-          {
-            "status": "attention",
-            "interval": 1450,
-            "diff": "3.34"
-          }
-        ]
-      },
-      {
-        "id": 8,
-        "name": "Wednesday",
-        "age": 17,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3908,
-            "diff": "2.49"
-          },
-          {
-            "status": "feed",
-            "interval": 3370,
-            "diff": "4.59"
-          },
-          {
-            "status": "sleep",
-            "interval": 5585,
-            "diff": "2.42"
-          },
-          {
-            "status": "toilet",
-            "interval": 1659,
-            "diff": "4.81"
-          },
-          {
-            "status": "attention",
-            "interval": 1643,
-            "diff": "1.48"
-          }
-        ]
-      },
-      {
-        "id": 9,
-        "name": "Morning",
-        "age": 10,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "blue",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1143,
-            "diff": "4.00"
-          },
-          {
-            "status": "feed",
-            "interval": 2225,
-            "diff": "1.60"
-          },
-          {
-            "status": "sleep",
-            "interval": 2901,
-            "diff": "4.98"
-          },
-          {
-            "status": "toilet",
-            "interval": 1506,
-            "diff": "1.97"
-          },
-          {
-            "status": "attention",
-            "interval": 2837,
-            "diff": "1.92"
-          }
-        ]
-      },
-      {
-        "id": 10,
-        "name": "Sunday",
-        "age": 16,
-        "type": "squirrel",
+        "name": "Evening",
+        "age": 14,
+        "type": "owl",
         "description": "nice pet",
         "hadOwner": false,
         "color": "indigo",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1051,
-            "diff": "1.77"
+            "interval": 858,
+            "diff": "3.61"
           },
           {
             "status": "feed",
-            "interval": 4659,
-            "diff": "2.74"
+            "interval": 5351,
+            "diff": "2.68"
           },
           {
             "status": "sleep",
-            "interval": 3897,
-            "diff": "2.16"
+            "interval": 5393,
+            "diff": "1.59"
           },
           {
             "status": "toilet",
-            "interval": 1857,
-            "diff": "3.06"
+            "interval": 2414,
+            "diff": "4.80"
           },
           {
             "status": "attention",
-            "interval": 2429,
-            "diff": "3.93"
-          }
-        ]
-      },
-      {
-        "id": 11,
-        "name": "Saturday",
-        "age": 17,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2264,
-            "diff": "2.61"
-          },
-          {
-            "status": "feed",
-            "interval": 3845,
-            "diff": "4.67"
-          },
-          {
-            "status": "sleep",
-            "interval": 5633,
-            "diff": "1.03"
-          },
-          {
-            "status": "toilet",
-            "interval": 1908,
-            "diff": "3.28"
-          },
-          {
-            "status": "attention",
-            "interval": 2138,
-            "diff": "1.92"
-          }
-        ]
-      },
-      {
-        "id": 12,
-        "name": "January",
-        "age": 3,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4042,
-            "diff": "4.61"
-          },
-          {
-            "status": "feed",
-            "interval": 4040,
-            "diff": "4.23"
-          },
-          {
-            "status": "sleep",
-            "interval": 6900,
-            "diff": "1.90"
-          },
-          {
-            "status": "toilet",
-            "interval": 2532,
-            "diff": "1.18"
-          },
-          {
-            "status": "attention",
-            "interval": 2452,
-            "diff": "1.15"
-          }
-        ]
-      },
-      {
-        "id": 13,
-        "name": "May",
-        "age": 8,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2386,
-            "diff": "1.57"
-          },
-          {
-            "status": "feed",
-            "interval": 4441,
-            "diff": "4.35"
-          },
-          {
-            "status": "sleep",
-            "interval": 4678,
-            "diff": "3.49"
-          },
-          {
-            "status": "toilet",
-            "interval": 1815,
-            "diff": "4.92"
-          },
-          {
-            "status": "attention",
-            "interval": 2841,
-            "diff": "1.01"
-          }
-        ]
-      },
-      {
-        "id": 14,
-        "name": "Morning",
-        "age": 4,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2978,
-            "diff": "3.87"
-          },
-          {
-            "status": "feed",
-            "interval": 3063,
-            "diff": "2.78"
-          },
-          {
-            "status": "sleep",
-            "interval": 6417,
-            "diff": "3.37"
-          },
-          {
-            "status": "toilet",
-            "interval": 1114,
-            "diff": "3.14"
-          },
-          {
-            "status": "attention",
-            "interval": 2383,
-            "diff": "2.76"
-          }
-        ]
-      },
-      {
-        "id": 15,
-        "name": "August",
-        "age": 10,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1250,
-            "diff": "4.57"
-          },
-          {
-            "status": "feed",
-            "interval": 4091,
-            "diff": "4.47"
-          },
-          {
-            "status": "sleep",
-            "interval": 6613,
-            "diff": "2.45"
-          },
-          {
-            "status": "toilet",
-            "interval": 1600,
-            "diff": "4.54"
-          },
-          {
-            "status": "attention",
-            "interval": 2321,
-            "diff": "1.76"
-          }
-        ]
-      },
-      {
-        "id": 16,
-        "name": "Morning",
-        "age": 12,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2184,
-            "diff": "4.07"
-          },
-          {
-            "status": "feed",
-            "interval": 2801,
-            "diff": "3.73"
-          },
-          {
-            "status": "sleep",
-            "interval": 4900,
-            "diff": "4.50"
-          },
-          {
-            "status": "toilet",
-            "interval": 2874,
-            "diff": "4.71"
-          },
-          {
-            "status": "attention",
-            "interval": 2845,
-            "diff": "1.94"
-          }
-        ]
-      },
-      {
-        "id": 17,
-        "name": "July",
-        "age": 11,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2154,
-            "diff": "3.13"
-          },
-          {
-            "status": "feed",
-            "interval": 4117,
-            "diff": "2.28"
-          },
-          {
-            "status": "sleep",
-            "interval": 5924,
-            "diff": "4.96"
-          },
-          {
-            "status": "toilet",
-            "interval": 1958,
-            "diff": "2.76"
-          },
-          {
-            "status": "attention",
-            "interval": 1083,
-            "diff": "1.00"
-          }
-        ]
-      },
-      {
-        "id": 18,
-        "name": "June",
-        "age": 0,
-        "type": "owl",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4443,
-            "diff": "2.50"
-          },
-          {
-            "status": "feed",
-            "interval": 2804,
-            "diff": "4.12"
-          },
-          {
-            "status": "sleep",
-            "interval": 6782,
-            "diff": "4.12"
-          },
-          {
-            "status": "toilet",
-            "interval": 1285,
-            "diff": "1.84"
-          },
-          {
-            "status": "attention",
-            "interval": 2023,
-            "diff": "2.94"
-          }
-        ]
-      },
-      {
-        "id": 19,
-        "name": "Wednesday",
-        "age": 6,
-        "type": "pigeon",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1614,
-            "diff": "1.03"
-          },
-          {
-            "status": "feed",
-            "interval": 5304,
-            "diff": "1.20"
-          },
-          {
-            "status": "sleep",
-            "interval": 5523,
-            "diff": "2.87"
-          },
-          {
-            "status": "toilet",
-            "interval": 2434,
-            "diff": "3.18"
-          },
-          {
-            "status": "attention",
-            "interval": 1730,
-            "diff": "1.90"
-          }
-        ]
-      },
-      {
-        "id": 20,
-        "name": "September",
-        "age": 0,
-        "type": "pig",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "blue",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4878,
-            "diff": "4.89"
-          },
-          {
-            "status": "feed",
-            "interval": 2634,
-            "diff": "1.05"
-          },
-          {
-            "status": "sleep",
-            "interval": 4546,
-            "diff": "1.47"
-          },
-          {
-            "status": "toilet",
-            "interval": 1927,
-            "diff": "4.68"
-          },
-          {
-            "status": "attention",
-            "interval": 2623,
-            "diff": "1.20"
-          }
-        ]
-      },
-      {
-        "id": 21,
-        "name": "Thursday",
-        "age": 17,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2969,
-            "diff": "1.19"
-          },
-          {
-            "status": "feed",
-            "interval": 2700,
-            "diff": "1.14"
-          },
-          {
-            "status": "sleep",
-            "interval": 5362,
-            "diff": "1.11"
-          },
-          {
-            "status": "toilet",
-            "interval": 2030,
-            "diff": "3.97"
-          },
-          {
-            "status": "attention",
-            "interval": 1340,
-            "diff": "1.13"
-          }
-        ]
-      },
-      {
-        "id": 22,
-        "name": "May",
-        "age": 1,
-        "type": "owl",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1667,
-            "diff": "4.05"
-          },
-          {
-            "status": "feed",
-            "interval": 3483,
-            "diff": "4.79"
-          },
-          {
-            "status": "sleep",
-            "interval": 6280,
-            "diff": "1.75"
-          },
-          {
-            "status": "toilet",
-            "interval": 2940,
-            "diff": "1.80"
-          },
-          {
-            "status": "attention",
-            "interval": 2723,
-            "diff": "3.81"
-          }
-        ]
-      },
-      {
-        "id": 23,
-        "name": "Evening",
-        "age": 9,
-        "type": "pig",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2368,
-            "diff": "2.13"
-          },
-          {
-            "status": "feed",
-            "interval": 4217,
-            "diff": "4.51"
-          },
-          {
-            "status": "sleep",
-            "interval": 3303,
-            "diff": "3.34"
-          },
-          {
-            "status": "toilet",
-            "interval": 2668,
-            "diff": "3.35"
-          },
-          {
-            "status": "attention",
-            "interval": 1747,
-            "diff": "3.11"
-          }
-        ]
-      },
-      {
-        "id": 24,
-        "name": "April",
-        "age": 15,
-        "type": "pigeon",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "blue",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1737,
-            "diff": "3.63"
-          },
-          {
-            "status": "feed",
-            "interval": 2852,
-            "diff": "4.46"
-          },
-          {
-            "status": "sleep",
-            "interval": 4961,
-            "diff": "2.30"
-          },
-          {
-            "status": "toilet",
-            "interval": 1041,
-            "diff": "4.69"
-          },
-          {
-            "status": "attention",
-            "interval": 2538,
-            "diff": "1.42"
-          }
-        ]
-      },
-      {
-        "id": 25,
-        "name": "Sunday",
-        "age": 11,
-        "type": "dog",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3820,
-            "diff": "4.92"
-          },
-          {
-            "status": "feed",
-            "interval": 2932,
-            "diff": "2.88"
-          },
-          {
-            "status": "sleep",
-            "interval": 6881,
-            "diff": "3.80"
-          },
-          {
-            "status": "toilet",
-            "interval": 1224,
-            "diff": "1.74"
-          },
-          {
-            "status": "attention",
-            "interval": 1566,
+            "interval": 1979,
             "diff": "2.59"
           }
         ]
       },
       {
-        "id": 26,
-        "name": "Friday",
-        "age": 10,
-        "type": "squirrel",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3207,
-            "diff": "3.20"
-          },
-          {
-            "status": "feed",
-            "interval": 3591,
-            "diff": "2.85"
-          },
-          {
-            "status": "sleep",
-            "interval": 3172,
-            "diff": "3.71"
-          },
-          {
-            "status": "toilet",
-            "interval": 1387,
-            "diff": "3.69"
-          },
-          {
-            "status": "attention",
-            "interval": 1898,
-            "diff": "2.97"
-          }
-        ]
-      },
-      {
-        "id": 27,
-        "name": "Wednesday",
-        "age": 2,
-        "type": "squirrel",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "green",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4994,
-            "diff": "1.31"
-          },
-          {
-            "status": "feed",
-            "interval": 2409,
-            "diff": "2.95"
-          },
-          {
-            "status": "sleep",
-            "interval": 4627,
-            "diff": "1.52"
-          },
-          {
-            "status": "toilet",
-            "interval": 2180,
-            "diff": "2.09"
-          },
-          {
-            "status": "attention",
-            "interval": 1866,
-            "diff": "4.82"
-          }
-        ]
-      },
-      {
-        "id": 28,
-        "name": "December",
-        "age": 9,
-        "type": "squirrel",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1671,
-            "diff": "1.37"
-          },
-          {
-            "status": "feed",
-            "interval": 4389,
-            "diff": "4.71"
-          },
-          {
-            "status": "sleep",
-            "interval": 3558,
-            "diff": "2.00"
-          },
-          {
-            "status": "toilet",
-            "interval": 2716,
-            "diff": "4.47"
-          },
-          {
-            "status": "attention",
-            "interval": 1390,
-            "diff": "2.65"
-          }
-        ]
-      },
-      {
-        "id": 29,
-        "name": "May",
-        "age": 17,
-        "type": "owl",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1215,
-            "diff": "2.61"
-          },
-          {
-            "status": "feed",
-            "interval": 4418,
-            "diff": "1.42"
-          },
-          {
-            "status": "sleep",
-            "interval": 3068,
-            "diff": "2.00"
-          },
-          {
-            "status": "toilet",
-            "interval": 2546,
-            "diff": "4.40"
-          },
-          {
-            "status": "attention",
-            "interval": 2526,
-            "diff": "2.05"
-          }
-        ]
-      },
-      {
-        "id": 30,
-        "name": "February",
-        "age": 9,
-        "type": "snake",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "green",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 590,
-            "diff": "1.79"
-          },
-          {
-            "status": "feed",
-            "interval": 5841,
-            "diff": "4.67"
-          },
-          {
-            "status": "sleep",
-            "interval": 3681,
-            "diff": "1.82"
-          },
-          {
-            "status": "toilet",
-            "interval": 1993,
-            "diff": "4.59"
-          },
-          {
-            "status": "attention",
-            "interval": 2918,
-            "diff": "3.36"
-          }
-        ]
-      },
-      {
-        "id": 31,
-        "name": "November",
-        "age": 13,
-        "type": "cat",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 728,
-            "diff": "4.27"
-          },
-          {
-            "status": "feed",
-            "interval": 2726,
-            "diff": "2.98"
-          },
-          {
-            "status": "sleep",
-            "interval": 4043,
-            "diff": "2.51"
-          },
-          {
-            "status": "toilet",
-            "interval": 2957,
-            "diff": "2.42"
-          },
-          {
-            "status": "attention",
-            "interval": 2914,
-            "diff": "3.43"
-          }
-        ]
-      },
-      {
-        "id": 32,
-        "name": "December",
-        "age": 4,
-        "type": "goose",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3469,
-            "diff": "3.14"
-          },
-          {
-            "status": "feed",
-            "interval": 2696,
-            "diff": "1.75"
-          },
-          {
-            "status": "sleep",
-            "interval": 6158,
-            "diff": "4.15"
-          },
-          {
-            "status": "toilet",
-            "interval": 2178,
-            "diff": "2.86"
-          },
-          {
-            "status": "attention",
-            "interval": 1979,
-            "diff": "4.89"
-          }
-        ]
-      },
-      {
-        "id": 33,
-        "name": "Wednesday",
-        "age": 17,
-        "type": "owl",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4232,
-            "diff": "2.06"
-          },
-          {
-            "status": "feed",
-            "interval": 3745,
-            "diff": "2.29"
-          },
-          {
-            "status": "sleep",
-            "interval": 4033,
-            "diff": "3.41"
-          },
-          {
-            "status": "toilet",
-            "interval": 2401,
-            "diff": "2.88"
-          },
-          {
-            "status": "attention",
-            "interval": 1866,
-            "diff": "4.73"
-          }
-        ]
-      },
-      {
-        "id": 34,
-        "name": "September",
-        "age": 4,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2332,
-            "diff": "1.95"
-          },
-          {
-            "status": "feed",
-            "interval": 2120,
-            "diff": "1.28"
-          },
-          {
-            "status": "sleep",
-            "interval": 5417,
-            "diff": "1.62"
-          },
-          {
-            "status": "toilet",
-            "interval": 2250,
-            "diff": "3.85"
-          },
-          {
-            "status": "attention",
-            "interval": 2136,
-            "diff": "2.32"
-          }
-        ]
-      },
-      {
-        "id": 35,
-        "name": "May",
-        "age": 13,
+        "id": 8,
+        "name": "Evening",
+        "age": 5,
         "type": "rabbit",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "purple",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1074,
-            "diff": "2.19"
+            "interval": 4559,
+            "diff": "1.16"
           },
           {
             "status": "feed",
-            "interval": 5634,
-            "diff": "1.83"
+            "interval": 4293,
+            "diff": "2.57"
           },
           {
             "status": "sleep",
-            "interval": 3383,
-            "diff": "4.61"
+            "interval": 3905,
+            "diff": "3.59"
           },
           {
             "status": "toilet",
-            "interval": 2811,
-            "diff": "3.16"
+            "interval": 2647,
+            "diff": "2.41"
           },
           {
             "status": "attention",
-            "interval": 1992,
-            "diff": "4.04"
+            "interval": 2088,
+            "diff": "3.20"
           }
         ]
       },
       {
-        "id": 36,
-        "name": "December",
-        "age": 3,
-        "type": "squirrel",
+        "id": 9,
+        "name": "Tuesday",
+        "age": 1,
+        "type": "mice",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "blue",
+        "color": "violet",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4061,
-            "diff": "4.41"
+            "interval": 2672,
+            "diff": "2.24"
           },
           {
             "status": "feed",
-            "interval": 5657,
-            "diff": "4.53"
+            "interval": 3283,
+            "diff": "2.49"
           },
           {
             "status": "sleep",
-            "interval": 2242,
-            "diff": "3.27"
+            "interval": 5301,
+            "diff": "2.76"
           },
           {
             "status": "toilet",
-            "interval": 2629,
-            "diff": "1.36"
+            "interval": 1317,
+            "diff": "1.26"
           },
           {
             "status": "attention",
-            "interval": 1710,
-            "diff": "4.27"
+            "interval": 1919,
+            "diff": "4.11"
           }
         ]
       },
       {
-        "id": 37,
-        "name": "Evening",
-        "age": 12,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2428,
-            "diff": "1.79"
-          },
-          {
-            "status": "feed",
-            "interval": 4925,
-            "diff": "2.56"
-          },
-          {
-            "status": "sleep",
-            "interval": 3945,
-            "diff": "4.01"
-          },
-          {
-            "status": "toilet",
-            "interval": 2350,
-            "diff": "2.14"
-          },
-          {
-            "status": "attention",
-            "interval": 1840,
-            "diff": "4.74"
-          }
-        ]
-      },
-      {
-        "id": 38,
+        "id": 10,
         "name": "Night",
-        "age": 5,
-        "type": "pig",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1044,
-            "diff": "2.86"
-          },
-          {
-            "status": "feed",
-            "interval": 2673,
-            "diff": "4.37"
-          },
-          {
-            "status": "sleep",
-            "interval": 4252,
-            "diff": "2.45"
-          },
-          {
-            "status": "toilet",
-            "interval": 2980,
-            "diff": "3.89"
-          },
-          {
-            "status": "attention",
-            "interval": 1872,
-            "diff": "3.29"
-          }
-        ]
-      },
-      {
-        "id": 39,
-        "name": "October",
-        "age": 6,
+        "age": 4,
         "type": "butterfly",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1443,
-            "diff": "3.61"
-          },
-          {
-            "status": "feed",
-            "interval": 4520,
-            "diff": "4.28"
-          },
-          {
-            "status": "sleep",
-            "interval": 4393,
-            "diff": "3.48"
-          },
-          {
-            "status": "toilet",
-            "interval": 2418,
-            "diff": "2.85"
-          },
-          {
-            "status": "attention",
-            "interval": 2048,
-            "diff": "3.15"
-          }
-        ]
-      },
-      {
-        "id": 40,
-        "name": "Thursday",
-        "age": 19,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
         "color": "purple",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1849,
-            "diff": "3.55"
+            "interval": 1213,
+            "diff": "2.74"
           },
           {
             "status": "feed",
-            "interval": 2675,
-            "diff": "3.41"
+            "interval": 5411,
+            "diff": "4.01"
           },
           {
             "status": "sleep",
-            "interval": 6921,
-            "diff": "2.72"
+            "interval": 2325,
+            "diff": "1.65"
           },
           {
             "status": "toilet",
-            "interval": 2813,
-            "diff": "1.31"
+            "interval": 1967,
+            "diff": "2.29"
           },
           {
             "status": "attention",
-            "interval": 1891,
-            "diff": "2.62"
+            "interval": 2873,
+            "diff": "4.03"
           }
         ]
       },
       {
-        "id": 41,
-        "name": "February",
-        "age": 5,
+        "id": 11,
+        "name": "June",
+        "age": 18,
         "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3654,
-            "diff": "3.28"
-          },
-          {
-            "status": "feed",
-            "interval": 5679,
-            "diff": "4.67"
-          },
-          {
-            "status": "sleep",
-            "interval": 6989,
-            "diff": "3.84"
-          },
-          {
-            "status": "toilet",
-            "interval": 1608,
-            "diff": "2.70"
-          },
-          {
-            "status": "attention",
-            "interval": 2289,
-            "diff": "2.52"
-          }
-        ]
-      },
-      {
-        "id": 42,
-        "name": "April",
-        "age": 8,
-        "type": "cat",
         "description": "nice pet",
         "hadOwner": false,
         "color": "violet",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2084,
-            "diff": "4.32"
+            "interval": 1654,
+            "diff": "3.83"
           },
           {
             "status": "feed",
-            "interval": 3968,
-            "diff": "1.90"
+            "interval": 3400,
+            "diff": "2.35"
           },
           {
             "status": "sleep",
-            "interval": 6641,
-            "diff": "4.25"
+            "interval": 3661,
+            "diff": "4.39"
           },
           {
             "status": "toilet",
-            "interval": 1386,
-            "diff": "1.05"
+            "interval": 2394,
+            "diff": "2.90"
           },
           {
             "status": "attention",
-            "interval": 1375,
-            "diff": "4.90"
+            "interval": 2751,
+            "diff": "2.17"
           }
         ]
       },
       {
-        "id": 43,
-        "name": "June",
-        "age": 3,
-        "type": "mice",
+        "id": 12,
+        "name": "Wednesday",
+        "age": 15,
+        "type": "snake",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "purple",
+        "color": "red",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4682,
-            "diff": "1.28"
+            "interval": 1446,
+            "diff": "1.14"
           },
           {
             "status": "feed",
-            "interval": 5883,
-            "diff": "4.91"
+            "interval": 4142,
+            "diff": "3.72"
           },
           {
             "status": "sleep",
-            "interval": 2412,
-            "diff": "4.71"
+            "interval": 5323,
+            "diff": "3.89"
           },
           {
             "status": "toilet",
-            "interval": 2567,
-            "diff": "2.88"
+            "interval": 1753,
+            "diff": "3.23"
           },
           {
             "status": "attention",
-            "interval": 2282,
-            "diff": "3.46"
+            "interval": 2816,
+            "diff": "2.51"
           }
         ]
       },
       {
-        "id": 44,
-        "name": "Evening",
-        "age": 4,
-        "type": "owl",
+        "id": 13,
+        "name": "February",
+        "age": 9,
+        "type": "cat",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "orange",
+        "color": "green",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3065,
-            "diff": "4.79"
-          },
-          {
-            "status": "feed",
-            "interval": 5158,
-            "diff": "3.31"
-          },
-          {
-            "status": "sleep",
-            "interval": 5763,
-            "diff": "3.45"
-          },
-          {
-            "status": "toilet",
-            "interval": 2576,
-            "diff": "3.37"
-          },
-          {
-            "status": "attention",
-            "interval": 2493,
-            "diff": "1.91"
-          }
-        ]
-      },
-      {
-        "id": 45,
-        "name": "Night",
-        "age": 6,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3178,
+            "interval": 4166,
             "diff": "2.75"
           },
           {
             "status": "feed",
-            "interval": 2170,
-            "diff": "3.49"
+            "interval": 3138,
+            "diff": "3.17"
           },
           {
             "status": "sleep",
-            "interval": 5170,
-            "diff": "4.34"
+            "interval": 5730,
+            "diff": "4.57"
           },
           {
             "status": "toilet",
-            "interval": 1705,
-            "diff": "2.49"
+            "interval": 2825,
+            "diff": "1.10"
           },
           {
             "status": "attention",
-            "interval": 2560,
-            "diff": "5.00"
+            "interval": 1160,
+            "diff": "1.55"
           }
         ]
       },
       {
-        "id": 46,
-        "name": "Friday",
+        "id": 14,
+        "name": "Wednesday",
         "age": 19,
-        "type": "pigeon",
+        "type": "pig",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "green",
+        "color": "purple",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1711,
-            "diff": "3.00"
+            "interval": 3668,
+            "diff": "1.20"
           },
           {
             "status": "feed",
-            "interval": 4183,
-            "diff": "4.33"
+            "interval": 4832,
+            "diff": "1.32"
           },
           {
             "status": "sleep",
-            "interval": 4685,
-            "diff": "2.52"
+            "interval": 2867,
+            "diff": "4.27"
           },
           {
             "status": "toilet",
-            "interval": 1688,
-            "diff": "3.41"
+            "interval": 1109,
+            "diff": "2.10"
           },
           {
             "status": "attention",
-            "interval": 2018,
-            "diff": "4.49"
+            "interval": 1280,
+            "diff": "3.93"
           }
         ]
       },
       {
-        "id": 47,
-        "name": "Afternoon",
-        "age": 17,
-        "type": "goose",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1236,
-            "diff": "1.06"
-          },
-          {
-            "status": "feed",
-            "interval": 5544,
-            "diff": "2.45"
-          },
-          {
-            "status": "sleep",
-            "interval": 3501,
-            "diff": "2.28"
-          },
-          {
-            "status": "toilet",
-            "interval": 2208,
-            "diff": "4.93"
-          },
-          {
-            "status": "attention",
-            "interval": 2130,
-            "diff": "2.13"
-          }
-        ]
-      },
-      {
-        "id": 48,
-        "name": "Afternoon",
-        "age": 8,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2907,
-            "diff": "1.12"
-          },
-          {
-            "status": "feed",
-            "interval": 5324,
-            "diff": "1.66"
-          },
-          {
-            "status": "sleep",
-            "interval": 4138,
-            "diff": "4.42"
-          },
-          {
-            "status": "toilet",
-            "interval": 1302,
-            "diff": "3.92"
-          },
-          {
-            "status": "attention",
-            "interval": 1200,
-            "diff": "2.30"
-          }
-        ]
-      },
-      {
-        "id": 49,
-        "name": "Friday",
-        "age": 13,
-        "type": "squirrel",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2976,
-            "diff": "1.97"
-          },
-          {
-            "status": "feed",
-            "interval": 4612,
-            "diff": "4.64"
-          },
-          {
-            "status": "sleep",
-            "interval": 2997,
-            "diff": "4.95"
-          },
-          {
-            "status": "toilet",
-            "interval": 1878,
-            "diff": "3.30"
-          },
-          {
-            "status": "attention",
-            "interval": 1685,
-            "diff": "3.87"
-          }
-        ]
-      },
-      {
-        "id": 50,
-        "name": "December",
-        "age": 12,
+        "id": 15,
+        "name": "Thursday",
+        "age": 5,
         "type": "mice",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "yellow",
+        "color": "purple",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3551,
-            "diff": "1.51"
+            "interval": 2763,
+            "diff": "2.36"
           },
           {
             "status": "feed",
-            "interval": 4676,
-            "diff": "4.79"
+            "interval": 4475,
+            "diff": "3.29"
           },
           {
             "status": "sleep",
-            "interval": 4731,
-            "diff": "4.59"
+            "interval": 3663,
+            "diff": "3.75"
           },
           {
             "status": "toilet",
-            "interval": 2302,
-            "diff": "3.03"
+            "interval": 2112,
+            "diff": "2.51"
           },
           {
             "status": "attention",
-            "interval": 2911,
-            "diff": "2.74"
+            "interval": 2621,
+            "diff": "2.83"
           }
         ]
       },
       {
-        "id": 51,
-        "name": "August",
-        "age": 18,
-        "type": "goose",
+        "id": 16,
+        "name": "Friday",
+        "age": 10,
+        "type": "fish",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "violet",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2431,
-            "diff": "4.08"
+            "interval": 941,
+            "diff": "3.40"
           },
           {
             "status": "feed",
-            "interval": 5034,
-            "diff": "3.69"
+            "interval": 3999,
+            "diff": "3.14"
           },
           {
             "status": "sleep",
-            "interval": 6333,
-            "diff": "2.09"
+            "interval": 6581,
+            "diff": "3.87"
           },
           {
             "status": "toilet",
-            "interval": 1487,
-            "diff": "4.86"
-          },
-          {
-            "status": "attention",
-            "interval": 1220,
-            "diff": "3.38"
-          }
-        ]
-      },
-      {
-        "id": 52,
-        "name": "Saturday",
-        "age": 15,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "blue",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3170,
-            "diff": "4.25"
-          },
-          {
-            "status": "feed",
-            "interval": 4800,
-            "diff": "1.25"
-          },
-          {
-            "status": "sleep",
-            "interval": 4699,
+            "interval": 1771,
             "diff": "4.92"
           },
           {
-            "status": "toilet",
-            "interval": 1119,
-            "diff": "4.88"
-          },
-          {
             "status": "attention",
-            "interval": 2606,
-            "diff": "2.25"
+            "interval": 2636,
+            "diff": "2.04"
           }
         ]
       },
       {
-        "id": 53,
-        "name": "November",
-        "age": 6,
-        "type": "owl",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2512,
-            "diff": "3.61"
-          },
-          {
-            "status": "feed",
-            "interval": 2129,
-            "diff": "4.96"
-          },
-          {
-            "status": "sleep",
-            "interval": 4675,
-            "diff": "3.12"
-          },
-          {
-            "status": "toilet",
-            "interval": 2975,
-            "diff": "3.00"
-          },
-          {
-            "status": "attention",
-            "interval": 2867,
-            "diff": "3.32"
-          }
-        ]
-      },
-      {
-        "id": 54,
-        "name": "January",
+        "id": 17,
+        "name": "June",
         "age": 14,
         "type": "mice",
         "description": "nice pet",
@@ -1955,34 +624,1762 @@
         "statuses": [
           {
             "status": "fun",
-            "interval": 3920,
+            "interval": 3838,
+            "diff": "3.31"
+          },
+          {
+            "status": "feed",
+            "interval": 5121,
+            "diff": "4.45"
+          },
+          {
+            "status": "sleep",
+            "interval": 4716,
+            "diff": "2.20"
+          },
+          {
+            "status": "toilet",
+            "interval": 1047,
+            "diff": "1.52"
+          },
+          {
+            "status": "attention",
+            "interval": 2356,
+            "diff": "3.20"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "July",
+        "age": 16,
+        "type": "dog",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1974,
             "diff": "2.28"
           },
           {
             "status": "feed",
-            "interval": 5837,
-            "diff": "2.78"
+            "interval": 2870,
+            "diff": "2.38"
           },
           {
             "status": "sleep",
-            "interval": 3657,
-            "diff": "4.46"
+            "interval": 6655,
+            "diff": "1.85"
           },
           {
             "status": "toilet",
-            "interval": 1152,
+            "interval": 1173,
+            "diff": "3.02"
+          },
+          {
+            "status": "attention",
+            "interval": 2341,
+            "diff": "4.13"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Evening",
+        "age": 12,
+        "type": "mice",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1348,
+            "diff": "3.91"
+          },
+          {
+            "status": "feed",
+            "interval": 5146,
+            "diff": "1.39"
+          },
+          {
+            "status": "sleep",
+            "interval": 4262,
+            "diff": "2.22"
+          },
+          {
+            "status": "toilet",
+            "interval": 2671,
+            "diff": "2.24"
+          },
+          {
+            "status": "attention",
+            "interval": 2459,
+            "diff": "2.89"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "June",
+        "age": 17,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1281,
+            "diff": "4.43"
+          },
+          {
+            "status": "feed",
+            "interval": 4474,
+            "diff": "2.11"
+          },
+          {
+            "status": "sleep",
+            "interval": 6267,
+            "diff": "4.71"
+          },
+          {
+            "status": "toilet",
+            "interval": 1420,
+            "diff": "2.02"
+          },
+          {
+            "status": "attention",
+            "interval": 2839,
+            "diff": "3.40"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Night",
+        "age": 17,
+        "type": "pig",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3940,
+            "diff": "4.69"
+          },
+          {
+            "status": "feed",
+            "interval": 2012,
+            "diff": "1.13"
+          },
+          {
+            "status": "sleep",
+            "interval": 5136,
+            "diff": "1.30"
+          },
+          {
+            "status": "toilet",
+            "interval": 1467,
             "diff": "1.95"
           },
           {
             "status": "attention",
-            "interval": 1576,
-            "diff": "2.50"
+            "interval": 1321,
+            "diff": "3.45"
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "May",
+        "age": 12,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2743,
+            "diff": "3.53"
+          },
+          {
+            "status": "feed",
+            "interval": 2527,
+            "diff": "1.93"
+          },
+          {
+            "status": "sleep",
+            "interval": 3773,
+            "diff": "1.21"
+          },
+          {
+            "status": "toilet",
+            "interval": 1294,
+            "diff": "2.22"
+          },
+          {
+            "status": "attention",
+            "interval": 1874,
+            "diff": "1.38"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "December",
+        "age": 0,
+        "type": "butterfly",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4497,
+            "diff": "3.41"
+          },
+          {
+            "status": "feed",
+            "interval": 3467,
+            "diff": "3.53"
+          },
+          {
+            "status": "sleep",
+            "interval": 5107,
+            "diff": "4.95"
+          },
+          {
+            "status": "toilet",
+            "interval": 1221,
+            "diff": "2.92"
+          },
+          {
+            "status": "attention",
+            "interval": 1768,
+            "diff": "3.70"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Evening",
+        "age": 12,
+        "type": "mice",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4550,
+            "diff": "2.42"
+          },
+          {
+            "status": "feed",
+            "interval": 5032,
+            "diff": "1.71"
+          },
+          {
+            "status": "sleep",
+            "interval": 5573,
+            "diff": "2.09"
+          },
+          {
+            "status": "toilet",
+            "interval": 2145,
+            "diff": "4.25"
+          },
+          {
+            "status": "attention",
+            "interval": 2343,
+            "diff": "3.90"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Sunday",
+        "age": 16,
+        "type": "butterfly",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1121,
+            "diff": "3.73"
+          },
+          {
+            "status": "feed",
+            "interval": 3609,
+            "diff": "4.94"
+          },
+          {
+            "status": "sleep",
+            "interval": 6336,
+            "diff": "2.48"
+          },
+          {
+            "status": "toilet",
+            "interval": 2496,
+            "diff": "3.68"
+          },
+          {
+            "status": "attention",
+            "interval": 1443,
+            "diff": "3.64"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Tuesday",
+        "age": 11,
+        "type": "butterfly",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2124,
+            "diff": "3.58"
+          },
+          {
+            "status": "feed",
+            "interval": 4171,
+            "diff": "2.12"
+          },
+          {
+            "status": "sleep",
+            "interval": 3883,
+            "diff": "4.02"
+          },
+          {
+            "status": "toilet",
+            "interval": 1150,
+            "diff": "3.11"
+          },
+          {
+            "status": "attention",
+            "interval": 2165,
+            "diff": "3.58"
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "name": "February",
+        "age": 8,
+        "type": "butterfly",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2876,
+            "diff": "2.48"
+          },
+          {
+            "status": "feed",
+            "interval": 5697,
+            "diff": "3.58"
+          },
+          {
+            "status": "sleep",
+            "interval": 4511,
+            "diff": "3.92"
+          },
+          {
+            "status": "toilet",
+            "interval": 2768,
+            "diff": "4.97"
+          },
+          {
+            "status": "attention",
+            "interval": 2360,
+            "diff": "2.42"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "July",
+        "age": 9,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 725,
+            "diff": "3.86"
+          },
+          {
+            "status": "feed",
+            "interval": 3000,
+            "diff": "3.05"
+          },
+          {
+            "status": "sleep",
+            "interval": 5110,
+            "diff": "1.86"
+          },
+          {
+            "status": "toilet",
+            "interval": 2674,
+            "diff": "3.87"
+          },
+          {
+            "status": "attention",
+            "interval": 2927,
+            "diff": "1.69"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Friday",
+        "age": 14,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "indigo",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 707,
+            "diff": "2.60"
+          },
+          {
+            "status": "feed",
+            "interval": 2877,
+            "diff": "2.48"
+          },
+          {
+            "status": "sleep",
+            "interval": 3845,
+            "diff": "1.07"
+          },
+          {
+            "status": "toilet",
+            "interval": 2804,
+            "diff": "1.60"
+          },
+          {
+            "status": "attention",
+            "interval": 1595,
+            "diff": "1.25"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "November",
+        "age": 17,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4889,
+            "diff": "2.97"
+          },
+          {
+            "status": "feed",
+            "interval": 2221,
+            "diff": "2.08"
+          },
+          {
+            "status": "sleep",
+            "interval": 2083,
+            "diff": "4.26"
+          },
+          {
+            "status": "toilet",
+            "interval": 1123,
+            "diff": "4.99"
+          },
+          {
+            "status": "attention",
+            "interval": 2087,
+            "diff": "1.30"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Sunday",
+        "age": 2,
+        "type": "horse",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1408,
+            "diff": "1.12"
+          },
+          {
+            "status": "feed",
+            "interval": 3507,
+            "diff": "2.36"
+          },
+          {
+            "status": "sleep",
+            "interval": 3445,
+            "diff": "4.74"
+          },
+          {
+            "status": "toilet",
+            "interval": 1381,
+            "diff": "3.87"
+          },
+          {
+            "status": "attention",
+            "interval": 1688,
+            "diff": "3.70"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Thursday",
+        "age": 8,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1117,
+            "diff": "2.62"
+          },
+          {
+            "status": "feed",
+            "interval": 5621,
+            "diff": "3.93"
+          },
+          {
+            "status": "sleep",
+            "interval": 5499,
+            "diff": "1.36"
+          },
+          {
+            "status": "toilet",
+            "interval": 1673,
+            "diff": "1.90"
+          },
+          {
+            "status": "attention",
+            "interval": 1007,
+            "diff": "3.42"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Afternoon",
+        "age": 9,
+        "type": "horse",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 852,
+            "diff": "1.72"
+          },
+          {
+            "status": "feed",
+            "interval": 2770,
+            "diff": "2.92"
+          },
+          {
+            "status": "sleep",
+            "interval": 5856,
+            "diff": "3.32"
+          },
+          {
+            "status": "toilet",
+            "interval": 2834,
+            "diff": "4.27"
+          },
+          {
+            "status": "attention",
+            "interval": 1754,
+            "diff": "4.66"
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "name": "Wednesday",
+        "age": 18,
+        "type": "goose",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4808,
+            "diff": "3.02"
+          },
+          {
+            "status": "feed",
+            "interval": 2244,
+            "diff": "1.34"
+          },
+          {
+            "status": "sleep",
+            "interval": 6876,
+            "diff": "3.57"
+          },
+          {
+            "status": "toilet",
+            "interval": 1421,
+            "diff": "3.86"
+          },
+          {
+            "status": "attention",
+            "interval": 1270,
+            "diff": "4.95"
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "name": "February",
+        "age": 5,
+        "type": "dog",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1799,
+            "diff": "1.68"
+          },
+          {
+            "status": "feed",
+            "interval": 3134,
+            "diff": "3.43"
+          },
+          {
+            "status": "sleep",
+            "interval": 5720,
+            "diff": "3.81"
+          },
+          {
+            "status": "toilet",
+            "interval": 1085,
+            "diff": "2.15"
+          },
+          {
+            "status": "attention",
+            "interval": 1029,
+            "diff": "2.89"
+          }
+        ]
+      },
+      {
+        "id": 36,
+        "name": "Morning",
+        "age": 6,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3435,
+            "diff": "4.43"
+          },
+          {
+            "status": "feed",
+            "interval": 2982,
+            "diff": "1.34"
+          },
+          {
+            "status": "sleep",
+            "interval": 5726,
+            "diff": "2.34"
+          },
+          {
+            "status": "toilet",
+            "interval": 1402,
+            "diff": "4.83"
+          },
+          {
+            "status": "attention",
+            "interval": 1727,
+            "diff": "1.81"
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "name": "Sunday",
+        "age": 3,
+        "type": "owl",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2342,
+            "diff": "3.24"
+          },
+          {
+            "status": "feed",
+            "interval": 4083,
+            "diff": "3.46"
+          },
+          {
+            "status": "sleep",
+            "interval": 4179,
+            "diff": "3.93"
+          },
+          {
+            "status": "toilet",
+            "interval": 1001,
+            "diff": "2.27"
+          },
+          {
+            "status": "attention",
+            "interval": 2566,
+            "diff": "2.00"
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "name": "May",
+        "age": 1,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2717,
+            "diff": "1.22"
+          },
+          {
+            "status": "feed",
+            "interval": 3656,
+            "diff": "4.24"
+          },
+          {
+            "status": "sleep",
+            "interval": 3168,
+            "diff": "1.20"
+          },
+          {
+            "status": "toilet",
+            "interval": 2466,
+            "diff": "3.62"
+          },
+          {
+            "status": "attention",
+            "interval": 2512,
+            "diff": "1.41"
+          }
+        ]
+      },
+      {
+        "id": 39,
+        "name": "January",
+        "age": 0,
+        "type": "cat",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1035,
+            "diff": "2.27"
+          },
+          {
+            "status": "feed",
+            "interval": 4333,
+            "diff": "3.72"
+          },
+          {
+            "status": "sleep",
+            "interval": 3773,
+            "diff": "1.24"
+          },
+          {
+            "status": "toilet",
+            "interval": 1900,
+            "diff": "4.09"
+          },
+          {
+            "status": "attention",
+            "interval": 1384,
+            "diff": "2.57"
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "name": "Thursday",
+        "age": 13,
+        "type": "goose",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4382,
+            "diff": "1.20"
+          },
+          {
+            "status": "feed",
+            "interval": 5281,
+            "diff": "4.50"
+          },
+          {
+            "status": "sleep",
+            "interval": 6291,
+            "diff": "2.08"
+          },
+          {
+            "status": "toilet",
+            "interval": 2357,
+            "diff": "2.06"
+          },
+          {
+            "status": "attention",
+            "interval": 2916,
+            "diff": "2.98"
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "name": "Monday",
+        "age": 4,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4462,
+            "diff": "2.93"
+          },
+          {
+            "status": "feed",
+            "interval": 2554,
+            "diff": "3.94"
+          },
+          {
+            "status": "sleep",
+            "interval": 2665,
+            "diff": "1.37"
+          },
+          {
+            "status": "toilet",
+            "interval": 2848,
+            "diff": "1.73"
+          },
+          {
+            "status": "attention",
+            "interval": 2366,
+            "diff": "3.57"
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "Thursday",
+        "age": 15,
+        "type": "owl",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1066,
+            "diff": "3.78"
+          },
+          {
+            "status": "feed",
+            "interval": 4768,
+            "diff": "1.73"
+          },
+          {
+            "status": "sleep",
+            "interval": 4109,
+            "diff": "2.64"
+          },
+          {
+            "status": "toilet",
+            "interval": 1135,
+            "diff": "1.61"
+          },
+          {
+            "status": "attention",
+            "interval": 2793,
+            "diff": "4.92"
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "name": "December",
+        "age": 8,
+        "type": "cat",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 583,
+            "diff": "2.67"
+          },
+          {
+            "status": "feed",
+            "interval": 3072,
+            "diff": "4.70"
+          },
+          {
+            "status": "sleep",
+            "interval": 2352,
+            "diff": "3.77"
+          },
+          {
+            "status": "toilet",
+            "interval": 2637,
+            "diff": "1.60"
+          },
+          {
+            "status": "attention",
+            "interval": 2372,
+            "diff": "2.33"
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "name": "Monday",
+        "age": 1,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3830,
+            "diff": "4.12"
+          },
+          {
+            "status": "feed",
+            "interval": 3259,
+            "diff": "4.54"
+          },
+          {
+            "status": "sleep",
+            "interval": 2694,
+            "diff": "1.86"
+          },
+          {
+            "status": "toilet",
+            "interval": 1995,
+            "diff": "3.72"
+          },
+          {
+            "status": "attention",
+            "interval": 1164,
+            "diff": "1.38"
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "name": "Afternoon",
+        "age": 3,
+        "type": "butterfly",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1478,
+            "diff": "2.83"
+          },
+          {
+            "status": "feed",
+            "interval": 3883,
+            "diff": "2.70"
+          },
+          {
+            "status": "sleep",
+            "interval": 6601,
+            "diff": "3.06"
+          },
+          {
+            "status": "toilet",
+            "interval": 2203,
+            "diff": "1.91"
+          },
+          {
+            "status": "attention",
+            "interval": 2747,
+            "diff": "3.68"
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "name": "August",
+        "age": 11,
+        "type": "horse",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4795,
+            "diff": "4.00"
+          },
+          {
+            "status": "feed",
+            "interval": 3268,
+            "diff": "3.39"
+          },
+          {
+            "status": "sleep",
+            "interval": 4336,
+            "diff": "3.00"
+          },
+          {
+            "status": "toilet",
+            "interval": 1015,
+            "diff": "4.76"
+          },
+          {
+            "status": "attention",
+            "interval": 1653,
+            "diff": "1.46"
+          }
+        ]
+      },
+      {
+        "id": 47,
+        "name": "Evening",
+        "age": 11,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4111,
+            "diff": "4.94"
+          },
+          {
+            "status": "feed",
+            "interval": 5639,
+            "diff": "2.70"
+          },
+          {
+            "status": "sleep",
+            "interval": 6454,
+            "diff": "1.41"
+          },
+          {
+            "status": "toilet",
+            "interval": 2325,
+            "diff": "3.51"
+          },
+          {
+            "status": "attention",
+            "interval": 1365,
+            "diff": "4.90"
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "name": "October",
+        "age": 11,
+        "type": "owl",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1483,
+            "diff": "3.42"
+          },
+          {
+            "status": "feed",
+            "interval": 2579,
+            "diff": "3.17"
+          },
+          {
+            "status": "sleep",
+            "interval": 3687,
+            "diff": "3.36"
+          },
+          {
+            "status": "toilet",
+            "interval": 1222,
+            "diff": "1.62"
+          },
+          {
+            "status": "attention",
+            "interval": 2083,
+            "diff": "2.40"
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "name": "Monday",
+        "age": 10,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2708,
+            "diff": "4.11"
+          },
+          {
+            "status": "feed",
+            "interval": 2239,
+            "diff": "1.88"
+          },
+          {
+            "status": "sleep",
+            "interval": 6066,
+            "diff": "3.49"
+          },
+          {
+            "status": "toilet",
+            "interval": 2364,
+            "diff": "2.12"
+          },
+          {
+            "status": "attention",
+            "interval": 2944,
+            "diff": "2.55"
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "name": "Tuesday",
+        "age": 19,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 622,
+            "diff": "1.71"
+          },
+          {
+            "status": "feed",
+            "interval": 5606,
+            "diff": "3.29"
+          },
+          {
+            "status": "sleep",
+            "interval": 3794,
+            "diff": "3.55"
+          },
+          {
+            "status": "toilet",
+            "interval": 2288,
+            "diff": "4.69"
+          },
+          {
+            "status": "attention",
+            "interval": 1572,
+            "diff": "3.28"
+          }
+        ]
+      },
+      {
+        "id": 51,
+        "name": "March",
+        "age": 3,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4961,
+            "diff": "1.87"
+          },
+          {
+            "status": "feed",
+            "interval": 2447,
+            "diff": "1.25"
+          },
+          {
+            "status": "sleep",
+            "interval": 3397,
+            "diff": "2.19"
+          },
+          {
+            "status": "toilet",
+            "interval": 2959,
+            "diff": "4.72"
+          },
+          {
+            "status": "attention",
+            "interval": 2712,
+            "diff": "2.79"
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "name": "July",
+        "age": 4,
+        "type": "mice",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3625,
+            "diff": "3.71"
+          },
+          {
+            "status": "feed",
+            "interval": 2170,
+            "diff": "1.22"
+          },
+          {
+            "status": "sleep",
+            "interval": 3496,
+            "diff": "2.37"
+          },
+          {
+            "status": "toilet",
+            "interval": 2684,
+            "diff": "4.55"
+          },
+          {
+            "status": "attention",
+            "interval": 1136,
+            "diff": "4.71"
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "name": "June",
+        "age": 13,
+        "type": "horse",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2028,
+            "diff": "4.33"
+          },
+          {
+            "status": "feed",
+            "interval": 3142,
+            "diff": "3.94"
+          },
+          {
+            "status": "sleep",
+            "interval": 4101,
+            "diff": "1.58"
+          },
+          {
+            "status": "toilet",
+            "interval": 2613,
+            "diff": "4.60"
+          },
+          {
+            "status": "attention",
+            "interval": 1842,
+            "diff": "1.45"
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "name": "Night",
+        "age": 4,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1289,
+            "diff": "2.66"
+          },
+          {
+            "status": "feed",
+            "interval": 5160,
+            "diff": "3.20"
+          },
+          {
+            "status": "sleep",
+            "interval": 5594,
+            "diff": "1.40"
+          },
+          {
+            "status": "toilet",
+            "interval": 1834,
+            "diff": "4.97"
+          },
+          {
+            "status": "attention",
+            "interval": 1264,
+            "diff": "3.31"
           }
         ]
       },
       {
         "id": 55,
+        "name": "Night",
+        "age": 2,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3005,
+            "diff": "2.28"
+          },
+          {
+            "status": "feed",
+            "interval": 5863,
+            "diff": "1.94"
+          },
+          {
+            "status": "sleep",
+            "interval": 6614,
+            "diff": "3.16"
+          },
+          {
+            "status": "toilet",
+            "interval": 1369,
+            "diff": "1.59"
+          },
+          {
+            "status": "attention",
+            "interval": 1272,
+            "diff": "1.95"
+          }
+        ]
+      },
+      {
+        "id": 56,
         "name": "November",
+        "age": 17,
+        "type": "dog",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3472,
+            "diff": "3.68"
+          },
+          {
+            "status": "feed",
+            "interval": 5638,
+            "diff": "2.64"
+          },
+          {
+            "status": "sleep",
+            "interval": 6047,
+            "diff": "2.04"
+          },
+          {
+            "status": "toilet",
+            "interval": 2719,
+            "diff": "3.50"
+          },
+          {
+            "status": "attention",
+            "interval": 2331,
+            "diff": "4.10"
+          }
+        ]
+      },
+      {
+        "id": 57,
+        "name": "October",
+        "age": 9,
+        "type": "cat",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2265,
+            "diff": "1.34"
+          },
+          {
+            "status": "feed",
+            "interval": 2813,
+            "diff": "4.88"
+          },
+          {
+            "status": "sleep",
+            "interval": 4901,
+            "diff": "3.14"
+          },
+          {
+            "status": "toilet",
+            "interval": 1362,
+            "diff": "3.44"
+          },
+          {
+            "status": "attention",
+            "interval": 2453,
+            "diff": "4.81"
+          }
+        ]
+      },
+      {
+        "id": 58,
+        "name": "Morning",
+        "age": 10,
+        "type": "mice",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "yellow",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4819,
+            "diff": "3.36"
+          },
+          {
+            "status": "feed",
+            "interval": 5628,
+            "diff": "4.86"
+          },
+          {
+            "status": "sleep",
+            "interval": 2305,
+            "diff": "3.85"
+          },
+          {
+            "status": "toilet",
+            "interval": 2812,
+            "diff": "1.56"
+          },
+          {
+            "status": "attention",
+            "interval": 1566,
+            "diff": "4.32"
+          }
+        ]
+      },
+      {
+        "id": 59,
+        "name": "Saturday",
+        "age": 9,
+        "type": "owl",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2694,
+            "diff": "3.40"
+          },
+          {
+            "status": "feed",
+            "interval": 5801,
+            "diff": "3.37"
+          },
+          {
+            "status": "sleep",
+            "interval": 4855,
+            "diff": "3.19"
+          },
+          {
+            "status": "toilet",
+            "interval": 1464,
+            "diff": "2.01"
+          },
+          {
+            "status": "attention",
+            "interval": 2012,
+            "diff": "3.57"
+          }
+        ]
+      },
+      {
+        "id": 60,
+        "name": "Tuesday",
+        "age": 15,
+        "type": "horse",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4949,
+            "diff": "3.91"
+          },
+          {
+            "status": "feed",
+            "interval": 2737,
+            "diff": "4.15"
+          },
+          {
+            "status": "sleep",
+            "interval": 6510,
+            "diff": "1.69"
+          },
+          {
+            "status": "toilet",
+            "interval": 1808,
+            "diff": "2.14"
+          },
+          {
+            "status": "attention",
+            "interval": 1359,
+            "diff": "3.88"
+          }
+        ]
+      },
+      {
+        "id": 61,
+        "name": "Saturday",
+        "age": 16,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2758,
+            "diff": "2.83"
+          },
+          {
+            "status": "feed",
+            "interval": 4873,
+            "diff": "3.23"
+          },
+          {
+            "status": "sleep",
+            "interval": 5598,
+            "diff": "4.85"
+          },
+          {
+            "status": "toilet",
+            "interval": 2347,
+            "diff": "1.57"
+          },
+          {
+            "status": "attention",
+            "interval": 2955,
+            "diff": "3.07"
+          }
+        ]
+      },
+      {
+        "id": 62,
+        "name": "May",
+        "age": 13,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1713,
+            "diff": "1.73"
+          },
+          {
+            "status": "feed",
+            "interval": 5778,
+            "diff": "4.68"
+          },
+          {
+            "status": "sleep",
+            "interval": 2988,
+            "diff": "3.63"
+          },
+          {
+            "status": "toilet",
+            "interval": 2590,
+            "diff": "1.69"
+          },
+          {
+            "status": "attention",
+            "interval": 1934,
+            "diff": "2.52"
+          }
+        ]
+      },
+      {
+        "id": 63,
+        "name": "Thursday",
+        "age": 9,
+        "type": "pig",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 950,
+            "diff": "2.68"
+          },
+          {
+            "status": "feed",
+            "interval": 5940,
+            "diff": "2.47"
+          },
+          {
+            "status": "sleep",
+            "interval": 2980,
+            "diff": "4.51"
+          },
+          {
+            "status": "toilet",
+            "interval": 2056,
+            "diff": "2.04"
+          },
+          {
+            "status": "attention",
+            "interval": 1102,
+            "diff": "4.23"
+          }
+        ]
+      },
+      {
+        "id": 64,
+        "name": "September",
+        "age": 18,
+        "type": "goose",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4732,
+            "diff": "2.13"
+          },
+          {
+            "status": "feed",
+            "interval": 5726,
+            "diff": "4.67"
+          },
+          {
+            "status": "sleep",
+            "interval": 4480,
+            "diff": "2.67"
+          },
+          {
+            "status": "toilet",
+            "interval": 1172,
+            "diff": "4.82"
+          },
+          {
+            "status": "attention",
+            "interval": 2011,
+            "diff": "3.59"
+          }
+        ]
+      },
+      {
+        "id": 65,
+        "name": "September",
+        "age": 2,
+        "type": "pig",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1444,
+            "diff": "3.83"
+          },
+          {
+            "status": "feed",
+            "interval": 5510,
+            "diff": "2.65"
+          },
+          {
+            "status": "sleep",
+            "interval": 6814,
+            "diff": "3.66"
+          },
+          {
+            "status": "toilet",
+            "interval": 2672,
+            "diff": "1.81"
+          },
+          {
+            "status": "attention",
+            "interval": 1112,
+            "diff": "1.86"
+          }
+        ]
+      },
+      {
+        "id": 66,
+        "name": "Wednesday",
         "age": 7,
         "type": "squirrel",
         "description": "nice pet",
@@ -1991,539 +2388,107 @@
         "statuses": [
           {
             "status": "fun",
-            "interval": 4303,
-            "diff": "1.29"
-          },
-          {
-            "status": "feed",
-            "interval": 3856,
-            "diff": "1.74"
-          },
-          {
-            "status": "sleep",
-            "interval": 4452,
-            "diff": "3.88"
-          },
-          {
-            "status": "toilet",
-            "interval": 1820,
-            "diff": "1.42"
-          },
-          {
-            "status": "attention",
-            "interval": 2667,
-            "diff": "2.87"
-          }
-        ]
-      },
-      {
-        "id": 56,
-        "name": "October",
-        "age": 3,
-        "type": "fish",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1576,
-            "diff": "3.25"
-          },
-          {
-            "status": "feed",
-            "interval": 3581,
-            "diff": "1.96"
-          },
-          {
-            "status": "sleep",
-            "interval": 5314,
-            "diff": "2.56"
-          },
-          {
-            "status": "toilet",
-            "interval": 1183,
-            "diff": "1.50"
-          },
-          {
-            "status": "attention",
-            "interval": 1202,
-            "diff": "4.38"
-          }
-        ]
-      },
-      {
-        "id": 57,
-        "name": "Saturday",
-        "age": 5,
-        "type": "cat",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1753,
-            "diff": "2.03"
-          },
-          {
-            "status": "feed",
-            "interval": 5974,
-            "diff": "1.78"
-          },
-          {
-            "status": "sleep",
-            "interval": 3892,
-            "diff": "4.33"
-          },
-          {
-            "status": "toilet",
-            "interval": 2270,
-            "diff": "2.09"
-          },
-          {
-            "status": "attention",
-            "interval": 1930,
-            "diff": "3.44"
-          }
-        ]
-      },
-      {
-        "id": 58,
-        "name": "October",
-        "age": 16,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2087,
-            "diff": "4.86"
-          },
-          {
-            "status": "feed",
-            "interval": 3506,
-            "diff": "4.69"
-          },
-          {
-            "status": "sleep",
-            "interval": 2402,
-            "diff": "2.57"
-          },
-          {
-            "status": "toilet",
-            "interval": 1132,
-            "diff": "4.48"
-          },
-          {
-            "status": "attention",
-            "interval": 2819,
-            "diff": "3.38"
-          }
-        ]
-      },
-      {
-        "id": 59,
-        "name": "January",
-        "age": 18,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "green",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4401,
-            "diff": "4.12"
-          },
-          {
-            "status": "feed",
-            "interval": 2437,
-            "diff": "1.13"
-          },
-          {
-            "status": "sleep",
-            "interval": 6307,
-            "diff": "3.57"
-          },
-          {
-            "status": "toilet",
-            "interval": 1876,
-            "diff": "2.97"
-          },
-          {
-            "status": "attention",
-            "interval": 2317,
-            "diff": "1.40"
-          }
-        ]
-      },
-      {
-        "id": 60,
-        "name": "March",
-        "age": 5,
-        "type": "pigeon",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 754,
-            "diff": "1.72"
-          },
-          {
-            "status": "feed",
-            "interval": 2366,
-            "diff": "4.14"
-          },
-          {
-            "status": "sleep",
-            "interval": 4320,
-            "diff": "4.37"
-          },
-          {
-            "status": "toilet",
-            "interval": 1595,
-            "diff": "4.54"
-          },
-          {
-            "status": "attention",
-            "interval": 2422,
-            "diff": "4.02"
-          }
-        ]
-      },
-      {
-        "id": 61,
-        "name": "Saturday",
-        "age": 16,
-        "type": "dog",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4490,
-            "diff": "4.62"
-          },
-          {
-            "status": "feed",
-            "interval": 4210,
-            "diff": "2.43"
-          },
-          {
-            "status": "sleep",
-            "interval": 2833,
-            "diff": "3.97"
-          },
-          {
-            "status": "toilet",
-            "interval": 1059,
-            "diff": "3.28"
-          },
-          {
-            "status": "attention",
-            "interval": 2944,
-            "diff": "2.58"
-          }
-        ]
-      },
-      {
-        "id": 62,
-        "name": "June",
-        "age": 10,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1992,
-            "diff": "4.86"
-          },
-          {
-            "status": "feed",
-            "interval": 2534,
-            "diff": "1.78"
-          },
-          {
-            "status": "sleep",
-            "interval": 6726,
-            "diff": "2.61"
-          },
-          {
-            "status": "toilet",
-            "interval": 1459,
-            "diff": "3.55"
-          },
-          {
-            "status": "attention",
-            "interval": 2318,
-            "diff": "1.76"
-          }
-        ]
-      },
-      {
-        "id": 63,
-        "name": "May",
-        "age": 0,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3710,
+            "interval": 1659,
             "diff": "1.31"
           },
           {
             "status": "feed",
-            "interval": 5960,
-            "diff": "4.76"
+            "interval": 2067,
+            "diff": "4.11"
           },
           {
             "status": "sleep",
-            "interval": 5666,
-            "diff": "2.19"
+            "interval": 6949,
+            "diff": "4.47"
           },
           {
             "status": "toilet",
-            "interval": 2705,
-            "diff": "1.29"
+            "interval": 2099,
+            "diff": "4.21"
           },
           {
             "status": "attention",
-            "interval": 1398,
-            "diff": "2.60"
-          }
-        ]
-      },
-      {
-        "id": 64,
-        "name": "Monday",
-        "age": 9,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3174,
-            "diff": "2.63"
-          },
-          {
-            "status": "feed",
-            "interval": 5164,
-            "diff": "1.44"
-          },
-          {
-            "status": "sleep",
-            "interval": 3776,
-            "diff": "1.36"
-          },
-          {
-            "status": "toilet",
-            "interval": 1088,
-            "diff": "1.34"
-          },
-          {
-            "status": "attention",
-            "interval": 2631,
-            "diff": "3.05"
-          }
-        ]
-      },
-      {
-        "id": 65,
-        "name": "Saturday",
-        "age": 14,
-        "type": "fish",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 921,
-            "diff": "1.19"
-          },
-          {
-            "status": "feed",
-            "interval": 2400,
-            "diff": "3.63"
-          },
-          {
-            "status": "sleep",
-            "interval": 6785,
-            "diff": "2.97"
-          },
-          {
-            "status": "toilet",
-            "interval": 2715,
-            "diff": "4.64"
-          },
-          {
-            "status": "attention",
-            "interval": 2076,
-            "diff": "3.22"
-          }
-        ]
-      },
-      {
-        "id": 66,
-        "name": "March",
-        "age": 16,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4141,
-            "diff": "3.40"
-          },
-          {
-            "status": "feed",
-            "interval": 2137,
-            "diff": "4.14"
-          },
-          {
-            "status": "sleep",
-            "interval": 3343,
-            "diff": "1.39"
-          },
-          {
-            "status": "toilet",
-            "interval": 2514,
-            "diff": "1.63"
-          },
-          {
-            "status": "attention",
-            "interval": 2767,
-            "diff": "1.42"
+            "interval": 1488,
+            "diff": "3.85"
           }
         ]
       },
       {
         "id": 67,
-        "name": "Saturday",
-        "age": 6,
-        "type": "rabbit",
+        "name": "June",
+        "age": 8,
+        "type": "squirrel",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "blue",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2606,
-            "diff": "2.96"
+            "interval": 4684,
+            "diff": "2.81"
           },
           {
             "status": "feed",
-            "interval": 5433,
-            "diff": "2.17"
+            "interval": 2899,
+            "diff": "2.57"
           },
           {
             "status": "sleep",
-            "interval": 3962,
-            "diff": "2.72"
+            "interval": 4239,
+            "diff": "4.58"
           },
           {
             "status": "toilet",
-            "interval": 2333,
-            "diff": "1.31"
+            "interval": 2396,
+            "diff": "4.81"
           },
           {
             "status": "attention",
-            "interval": 1393,
-            "diff": "1.12"
+            "interval": 2873,
+            "diff": "1.46"
           }
         ]
       },
       {
         "id": 68,
-        "name": "Monday",
-        "age": 12,
-        "type": "butterfly",
+        "name": "Thursday",
+        "age": 4,
+        "type": "squirrel",
         "description": "nice pet",
         "hadOwner": false,
-        "color": "indigo",
+        "color": "blue",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1571,
-            "diff": "4.13"
+            "interval": 4437,
+            "diff": "1.13"
           },
           {
             "status": "feed",
-            "interval": 3507,
-            "diff": "4.60"
+            "interval": 3236,
+            "diff": "2.84"
           },
           {
             "status": "sleep",
-            "interval": 4153,
-            "diff": "4.44"
+            "interval": 4623,
+            "diff": "1.23"
           },
           {
             "status": "toilet",
-            "interval": 1174,
-            "diff": "2.39"
+            "interval": 2986,
+            "diff": "2.10"
           },
           {
             "status": "attention",
-            "interval": 2153,
-            "diff": "4.02"
+            "interval": 1700,
+            "diff": "3.24"
           }
         ]
       },
       {
         "id": 69,
-        "name": "May",
-        "age": 19,
-        "type": "fish",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 795,
-            "diff": "3.19"
-          },
-          {
-            "status": "feed",
-            "interval": 5459,
-            "diff": "3.70"
-          },
-          {
-            "status": "sleep",
-            "interval": 5350,
-            "diff": "1.90"
-          },
-          {
-            "status": "toilet",
-            "interval": 2232,
-            "diff": "2.77"
-          },
-          {
-            "status": "attention",
-            "interval": 2071,
-            "diff": "3.26"
-          }
-        ]
-      },
-      {
-        "id": 70,
         "name": "August",
-        "age": 0,
+        "age": 18,
         "type": "mice",
         "description": "nice pet",
         "hadOwner": false,
@@ -2531,395 +2496,35 @@
         "statuses": [
           {
             "status": "fun",
-            "interval": 629,
-            "diff": "4.04"
+            "interval": 2428,
+            "diff": "2.54"
           },
           {
             "status": "feed",
-            "interval": 3632,
-            "diff": "4.35"
+            "interval": 2534,
+            "diff": "3.26"
           },
           {
             "status": "sleep",
-            "interval": 5187,
-            "diff": "2.99"
+            "interval": 5229,
+            "diff": "2.93"
           },
           {
             "status": "toilet",
-            "interval": 2478,
-            "diff": "1.55"
-          },
-          {
-            "status": "attention",
-            "interval": 1091,
-            "diff": "4.81"
-          }
-        ]
-      },
-      {
-        "id": 71,
-        "name": "Evening",
-        "age": 0,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1878,
-            "diff": "2.58"
-          },
-          {
-            "status": "feed",
-            "interval": 2126,
-            "diff": "1.40"
-          },
-          {
-            "status": "sleep",
-            "interval": 3945,
-            "diff": "1.02"
-          },
-          {
-            "status": "toilet",
-            "interval": 1352,
-            "diff": "2.02"
-          },
-          {
-            "status": "attention",
-            "interval": 2600,
-            "diff": "1.07"
-          }
-        ]
-      },
-      {
-        "id": 72,
-        "name": "January",
-        "age": 11,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1331,
-            "diff": "1.89"
-          },
-          {
-            "status": "feed",
-            "interval": 5381,
-            "diff": "4.75"
-          },
-          {
-            "status": "sleep",
-            "interval": 2064,
-            "diff": "3.82"
-          },
-          {
-            "status": "toilet",
-            "interval": 2065,
-            "diff": "2.41"
-          },
-          {
-            "status": "attention",
-            "interval": 1240,
-            "diff": "4.68"
-          }
-        ]
-      },
-      {
-        "id": 73,
-        "name": "December",
-        "age": 2,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2881,
-            "diff": "4.81"
-          },
-          {
-            "status": "feed",
-            "interval": 3531,
-            "diff": "4.39"
-          },
-          {
-            "status": "sleep",
-            "interval": 2591,
-            "diff": "3.75"
-          },
-          {
-            "status": "toilet",
-            "interval": 2549,
-            "diff": "2.19"
-          },
-          {
-            "status": "attention",
-            "interval": 2103,
-            "diff": "4.68"
-          }
-        ]
-      },
-      {
-        "id": 74,
-        "name": "May",
-        "age": 0,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2315,
-            "diff": "4.28"
-          },
-          {
-            "status": "feed",
-            "interval": 3756,
-            "diff": "4.31"
-          },
-          {
-            "status": "sleep",
-            "interval": 3733,
-            "diff": "3.03"
-          },
-          {
-            "status": "toilet",
-            "interval": 1889,
-            "diff": "3.66"
-          },
-          {
-            "status": "attention",
-            "interval": 2302,
-            "diff": "4.94"
-          }
-        ]
-      },
-      {
-        "id": 75,
-        "name": "December",
-        "age": 12,
-        "type": "chicken",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2450,
-            "diff": "4.50"
-          },
-          {
-            "status": "feed",
-            "interval": 5359,
+            "interval": 2354,
             "diff": "3.65"
           },
           {
-            "status": "sleep",
-            "interval": 4770,
-            "diff": "2.96"
-          },
-          {
-            "status": "toilet",
-            "interval": 2830,
-            "diff": "4.74"
-          },
-          {
             "status": "attention",
-            "interval": 1512,
-            "diff": "1.98"
+            "interval": 2798,
+            "diff": "3.52"
           }
         ]
       },
       {
-        "id": 76,
-        "name": "March",
-        "age": 11,
-        "type": "pig",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3971,
-            "diff": "4.76"
-          },
-          {
-            "status": "feed",
-            "interval": 3629,
-            "diff": "4.90"
-          },
-          {
-            "status": "sleep",
-            "interval": 3716,
-            "diff": "4.14"
-          },
-          {
-            "status": "toilet",
-            "interval": 1594,
-            "diff": "2.21"
-          },
-          {
-            "status": "attention",
-            "interval": 2866,
-            "diff": "2.79"
-          }
-        ]
-      },
-      {
-        "id": 77,
-        "name": "October",
-        "age": 5,
-        "type": "mice",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4321,
-            "diff": "4.64"
-          },
-          {
-            "status": "feed",
-            "interval": 5307,
-            "diff": "3.93"
-          },
-          {
-            "status": "sleep",
-            "interval": 3049,
-            "diff": "3.88"
-          },
-          {
-            "status": "toilet",
-            "interval": 1998,
-            "diff": "2.68"
-          },
-          {
-            "status": "attention",
-            "interval": 2634,
-            "diff": "3.74"
-          }
-        ]
-      },
-      {
-        "id": 78,
-        "name": "February",
-        "age": 13,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2406,
-            "diff": "4.23"
-          },
-          {
-            "status": "feed",
-            "interval": 5508,
-            "diff": "1.20"
-          },
-          {
-            "status": "sleep",
-            "interval": 6088,
-            "diff": "4.80"
-          },
-          {
-            "status": "toilet",
-            "interval": 1871,
-            "diff": "4.82"
-          },
-          {
-            "status": "attention",
-            "interval": 1011,
-            "diff": "4.41"
-          }
-        ]
-      },
-      {
-        "id": 79,
-        "name": "November",
-        "age": 18,
-        "type": "goose",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "yellow",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1110,
-            "diff": "2.20"
-          },
-          {
-            "status": "feed",
-            "interval": 4352,
-            "diff": "4.78"
-          },
-          {
-            "status": "sleep",
-            "interval": 6065,
-            "diff": "2.32"
-          },
-          {
-            "status": "toilet",
-            "interval": 2274,
-            "diff": "1.04"
-          },
-          {
-            "status": "attention",
-            "interval": 2719,
-            "diff": "1.42"
-          }
-        ]
-      },
-      {
-        "id": 80,
-        "name": "May",
-        "age": 16,
-        "type": "rabbit",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4379,
-            "diff": "4.91"
-          },
-          {
-            "status": "feed",
-            "interval": 5761,
-            "diff": "4.17"
-          },
-          {
-            "status": "sleep",
-            "interval": 4303,
-            "diff": "4.84"
-          },
-          {
-            "status": "toilet",
-            "interval": 1632,
-            "diff": "1.54"
-          },
-          {
-            "status": "attention",
-            "interval": 1174,
-            "diff": "3.58"
-          }
-        ]
-      },
-      {
-        "id": 81,
-        "name": "April",
-        "age": 10,
+        "id": 70,
+        "name": "Afternoon",
+        "age": 12,
         "type": "snake",
         "description": "nice pet",
         "hadOwner": false,
@@ -2927,287 +2532,611 @@
         "statuses": [
           {
             "status": "fun",
-            "interval": 2046,
-            "diff": "3.79"
+            "interval": 2893,
+            "diff": "4.83"
           },
           {
             "status": "feed",
-            "interval": 5407,
-            "diff": "3.95"
+            "interval": 5485,
+            "diff": "1.27"
           },
           {
             "status": "sleep",
-            "interval": 5539,
-            "diff": "3.06"
+            "interval": 2156,
+            "diff": "3.67"
           },
           {
             "status": "toilet",
-            "interval": 2080,
-            "diff": "3.73"
+            "interval": 2578,
+            "diff": "2.58"
           },
           {
             "status": "attention",
-            "interval": 1746,
-            "diff": "1.64"
+            "interval": 2374,
+            "diff": "1.78"
           }
         ]
       },
       {
-        "id": 82,
-        "name": "Monday",
-        "age": 5,
+        "id": 71,
+        "name": "March",
+        "age": 4,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3063,
+            "diff": "2.08"
+          },
+          {
+            "status": "feed",
+            "interval": 5254,
+            "diff": "3.40"
+          },
+          {
+            "status": "sleep",
+            "interval": 5622,
+            "diff": "4.35"
+          },
+          {
+            "status": "toilet",
+            "interval": 1241,
+            "diff": "1.88"
+          },
+          {
+            "status": "attention",
+            "interval": 2636,
+            "diff": "1.67"
+          }
+        ]
+      },
+      {
+        "id": 72,
+        "name": "October",
+        "age": 15,
         "type": "dog",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 671,
-            "diff": "3.47"
-          },
-          {
-            "status": "feed",
-            "interval": 4521,
-            "diff": "4.65"
-          },
-          {
-            "status": "sleep",
-            "interval": 2582,
-            "diff": "1.90"
-          },
-          {
-            "status": "toilet",
-            "interval": 1011,
-            "diff": "1.37"
-          },
-          {
-            "status": "attention",
-            "interval": 1626,
-            "diff": "2.01"
-          }
-        ]
-      },
-      {
-        "id": 83,
-        "name": "Saturday",
-        "age": 5,
-        "type": "goose",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "indigo",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3857,
-            "diff": "2.38"
-          },
-          {
-            "status": "feed",
-            "interval": 5558,
-            "diff": "4.87"
-          },
-          {
-            "status": "sleep",
-            "interval": 6011,
-            "diff": "4.06"
-          },
-          {
-            "status": "toilet",
-            "interval": 2376,
-            "diff": "1.52"
-          },
-          {
-            "status": "attention",
-            "interval": 1033,
-            "diff": "2.85"
-          }
-        ]
-      },
-      {
-        "id": 84,
-        "name": "Thursday",
-        "age": 11,
-        "type": "cat",
         "description": "nice pet",
         "hadOwner": false,
         "color": "yellow",
         "statuses": [
           {
             "status": "fun",
-            "interval": 4678,
-            "diff": "3.86"
+            "interval": 1538,
+            "diff": "2.03"
           },
           {
             "status": "feed",
-            "interval": 2156,
+            "interval": 2474,
             "diff": "4.25"
           },
           {
             "status": "sleep",
-            "interval": 6038,
-            "diff": "3.81"
+            "interval": 2565,
+            "diff": "2.91"
           },
           {
             "status": "toilet",
-            "interval": 1617,
-            "diff": "4.83"
+            "interval": 1642,
+            "diff": "2.12"
           },
           {
             "status": "attention",
-            "interval": 1665,
-            "diff": "2.07"
+            "interval": 1196,
+            "diff": "3.07"
           }
         ]
       },
       {
-        "id": 85,
-        "name": "Afternoon",
-        "age": 18,
-        "type": "mice",
+        "id": 73,
+        "name": "Thursday",
+        "age": 19,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2732,
+            "diff": "3.15"
+          },
+          {
+            "status": "feed",
+            "interval": 3864,
+            "diff": "1.69"
+          },
+          {
+            "status": "sleep",
+            "interval": 6794,
+            "diff": "3.63"
+          },
+          {
+            "status": "toilet",
+            "interval": 2095,
+            "diff": "4.21"
+          },
+          {
+            "status": "attention",
+            "interval": 2988,
+            "diff": "3.63"
+          }
+        ]
+      },
+      {
+        "id": 74,
+        "name": "Thursday",
+        "age": 6,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1889,
+            "diff": "1.43"
+          },
+          {
+            "status": "feed",
+            "interval": 5820,
+            "diff": "2.58"
+          },
+          {
+            "status": "sleep",
+            "interval": 6687,
+            "diff": "4.87"
+          },
+          {
+            "status": "toilet",
+            "interval": 2905,
+            "diff": "4.84"
+          },
+          {
+            "status": "attention",
+            "interval": 1316,
+            "diff": "1.27"
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "name": "Monday",
+        "age": 7,
+        "type": "pigeon",
         "description": "nice pet",
         "hadOwner": false,
         "color": "yellow",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2643,
-            "diff": "4.60"
+            "interval": 4655,
+            "diff": "3.35"
           },
           {
             "status": "feed",
-            "interval": 5598,
-            "diff": "1.73"
+            "interval": 5352,
+            "diff": "3.37"
           },
           {
             "status": "sleep",
-            "interval": 2955,
-            "diff": "2.45"
+            "interval": 3401,
+            "diff": "4.42"
           },
           {
             "status": "toilet",
-            "interval": 1247,
-            "diff": "1.85"
+            "interval": 2395,
+            "diff": "4.99"
           },
           {
             "status": "attention",
-            "interval": 1263,
-            "diff": "2.66"
+            "interval": 1139,
+            "diff": "1.81"
           }
         ]
       },
       {
-        "id": 86,
+        "id": 76,
+        "name": "June",
+        "age": 7,
+        "type": "owl",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "indigo",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4033,
+            "diff": "1.83"
+          },
+          {
+            "status": "feed",
+            "interval": 2679,
+            "diff": "3.57"
+          },
+          {
+            "status": "sleep",
+            "interval": 3418,
+            "diff": "2.88"
+          },
+          {
+            "status": "toilet",
+            "interval": 1063,
+            "diff": "1.89"
+          },
+          {
+            "status": "attention",
+            "interval": 1815,
+            "diff": "4.06"
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "name": "August",
+        "age": 2,
+        "type": "chicken",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3478,
+            "diff": "4.04"
+          },
+          {
+            "status": "feed",
+            "interval": 5849,
+            "diff": "4.89"
+          },
+          {
+            "status": "sleep",
+            "interval": 6095,
+            "diff": "4.46"
+          },
+          {
+            "status": "toilet",
+            "interval": 1987,
+            "diff": "4.93"
+          },
+          {
+            "status": "attention",
+            "interval": 1895,
+            "diff": "1.43"
+          }
+        ]
+      },
+      {
+        "id": 78,
         "name": "December",
+        "age": 6,
+        "type": "squirrel",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "red",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1150,
+            "diff": "2.98"
+          },
+          {
+            "status": "feed",
+            "interval": 2678,
+            "diff": "2.04"
+          },
+          {
+            "status": "sleep",
+            "interval": 4069,
+            "diff": "2.68"
+          },
+          {
+            "status": "toilet",
+            "interval": 2746,
+            "diff": "2.20"
+          },
+          {
+            "status": "attention",
+            "interval": 1745,
+            "diff": "2.50"
+          }
+        ]
+      },
+      {
+        "id": 79,
+        "name": "March",
         "age": 1,
-        "type": "cat",
+        "type": "pig",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 700,
+            "diff": "3.78"
+          },
+          {
+            "status": "feed",
+            "interval": 4236,
+            "diff": "2.92"
+          },
+          {
+            "status": "sleep",
+            "interval": 2691,
+            "diff": "1.91"
+          },
+          {
+            "status": "toilet",
+            "interval": 1600,
+            "diff": "3.34"
+          },
+          {
+            "status": "attention",
+            "interval": 2837,
+            "diff": "2.69"
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "name": "Saturday",
+        "age": 11,
+        "type": "pigeon",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4526,
+            "diff": "1.87"
+          },
+          {
+            "status": "feed",
+            "interval": 3288,
+            "diff": "1.47"
+          },
+          {
+            "status": "sleep",
+            "interval": 3602,
+            "diff": "3.01"
+          },
+          {
+            "status": "toilet",
+            "interval": 2350,
+            "diff": "2.40"
+          },
+          {
+            "status": "attention",
+            "interval": 2241,
+            "diff": "1.91"
+          }
+        ]
+      },
+      {
+        "id": 81,
+        "name": "Afternoon",
+        "age": 0,
+        "type": "horse",
         "description": "nice pet",
         "hadOwner": false,
         "color": "green",
         "statuses": [
           {
             "status": "fun",
-            "interval": 1631,
-            "diff": "1.43"
+            "interval": 669,
+            "diff": "4.95"
           },
           {
             "status": "feed",
-            "interval": 4555,
-            "diff": "4.01"
+            "interval": 5638,
+            "diff": "2.47"
           },
           {
             "status": "sleep",
-            "interval": 5018,
-            "diff": "2.62"
+            "interval": 2232,
+            "diff": "1.54"
           },
           {
             "status": "toilet",
-            "interval": 2771,
-            "diff": "2.21"
+            "interval": 2615,
+            "diff": "1.83"
           },
           {
             "status": "attention",
-            "interval": 1261,
-            "diff": "2.28"
+            "interval": 2710,
+            "diff": "1.06"
+          }
+        ]
+      },
+      {
+        "id": 82,
+        "name": "May",
+        "age": 16,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1813,
+            "diff": "2.04"
+          },
+          {
+            "status": "feed",
+            "interval": 4459,
+            "diff": "1.05"
+          },
+          {
+            "status": "sleep",
+            "interval": 6626,
+            "diff": "3.82"
+          },
+          {
+            "status": "toilet",
+            "interval": 1469,
+            "diff": "2.41"
+          },
+          {
+            "status": "attention",
+            "interval": 1246,
+            "diff": "4.75"
+          }
+        ]
+      },
+      {
+        "id": 83,
+        "name": "Thursday",
+        "age": 7,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "blue",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3930,
+            "diff": "1.16"
+          },
+          {
+            "status": "feed",
+            "interval": 2289,
+            "diff": "3.26"
+          },
+          {
+            "status": "sleep",
+            "interval": 3735,
+            "diff": "1.94"
+          },
+          {
+            "status": "toilet",
+            "interval": 1513,
+            "diff": "1.41"
+          },
+          {
+            "status": "attention",
+            "interval": 1227,
+            "diff": "1.01"
+          }
+        ]
+      },
+      {
+        "id": 84,
+        "name": "October",
+        "age": 4,
+        "type": "pig",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4212,
+            "diff": "4.05"
+          },
+          {
+            "status": "feed",
+            "interval": 3003,
+            "diff": "4.85"
+          },
+          {
+            "status": "sleep",
+            "interval": 6860,
+            "diff": "2.52"
+          },
+          {
+            "status": "toilet",
+            "interval": 1348,
+            "diff": "2.83"
+          },
+          {
+            "status": "attention",
+            "interval": 1017,
+            "diff": "2.03"
+          }
+        ]
+      },
+      {
+        "id": 85,
+        "name": "Tuesday",
+        "age": 9,
+        "type": "cat",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3584,
+            "diff": "1.12"
+          },
+          {
+            "status": "feed",
+            "interval": 2106,
+            "diff": "2.84"
+          },
+          {
+            "status": "sleep",
+            "interval": 4829,
+            "diff": "2.63"
+          },
+          {
+            "status": "toilet",
+            "interval": 1424,
+            "diff": "4.35"
+          },
+          {
+            "status": "attention",
+            "interval": 2262,
+            "diff": "1.54"
+          }
+        ]
+      },
+      {
+        "id": 86,
+        "name": "March",
+        "age": 7,
+        "type": "squirrel",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "indigo",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 705,
+            "diff": "1.18"
+          },
+          {
+            "status": "feed",
+            "interval": 4400,
+            "diff": "1.82"
+          },
+          {
+            "status": "sleep",
+            "interval": 3589,
+            "diff": "2.90"
+          },
+          {
+            "status": "toilet",
+            "interval": 1096,
+            "diff": "1.60"
+          },
+          {
+            "status": "attention",
+            "interval": 2818,
+            "diff": "3.53"
           }
         ]
       },
       {
         "id": 87,
-        "name": "November",
-        "age": 10,
-        "type": "cat",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1121,
-            "diff": "4.40"
-          },
-          {
-            "status": "feed",
-            "interval": 5817,
-            "diff": "1.08"
-          },
-          {
-            "status": "sleep",
-            "interval": 4162,
-            "diff": "4.73"
-          },
-          {
-            "status": "toilet",
-            "interval": 1504,
-            "diff": "1.58"
-          },
-          {
-            "status": "attention",
-            "interval": 1180,
-            "diff": "3.39"
-          }
-        ]
-      },
-      {
-        "id": 88,
-        "name": "May",
-        "age": 5,
-        "type": "pigeon",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1109,
-            "diff": "2.52"
-          },
-          {
-            "status": "feed",
-            "interval": 3310,
-            "diff": "4.98"
-          },
-          {
-            "status": "sleep",
-            "interval": 4177,
-            "diff": "4.93"
-          },
-          {
-            "status": "toilet",
-            "interval": 2326,
-            "diff": "1.04"
-          },
-          {
-            "status": "attention",
-            "interval": 2479,
-            "diff": "3.26"
-          }
-        ]
-      },
-      {
-        "id": 89,
-        "name": "December",
-        "age": 13,
+        "name": "September",
+        "age": 19,
         "type": "rabbit",
         "description": "nice pet",
         "hadOwner": false,
@@ -3215,390 +3144,463 @@
         "statuses": [
           {
             "status": "fun",
-            "interval": 2660,
-            "diff": "4.93"
+            "interval": 4683,
+            "diff": "3.43"
           },
           {
             "status": "feed",
-            "interval": 3233,
-            "diff": "3.08"
+            "interval": 3849,
+            "diff": "2.26"
           },
           {
             "status": "sleep",
-            "interval": 3314,
-            "diff": "2.62"
+            "interval": 4655,
+            "diff": "3.08"
           },
           {
             "status": "toilet",
-            "interval": 1040,
-            "diff": "1.07"
+            "interval": 2797,
+            "diff": "4.23"
           },
           {
             "status": "attention",
-            "interval": 1305,
+            "interval": 2845,
+            "diff": "4.40"
+          }
+        ]
+      },
+      {
+        "id": 88,
+        "name": "Wednesday",
+        "age": 5,
+        "type": "squirrel",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3859,
+            "diff": "3.89"
+          },
+          {
+            "status": "feed",
+            "interval": 3228,
             "diff": "1.29"
+          },
+          {
+            "status": "sleep",
+            "interval": 5348,
+            "diff": "3.12"
+          },
+          {
+            "status": "toilet",
+            "interval": 1269,
+            "diff": "2.25"
+          },
+          {
+            "status": "attention",
+            "interval": 2249,
+            "diff": "4.49"
+          }
+        ]
+      },
+      {
+        "id": 89,
+        "name": "March",
+        "age": 13,
+        "type": "snake",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4162,
+            "diff": "1.80"
+          },
+          {
+            "status": "feed",
+            "interval": 4017,
+            "diff": "2.76"
+          },
+          {
+            "status": "sleep",
+            "interval": 2835,
+            "diff": "3.46"
+          },
+          {
+            "status": "toilet",
+            "interval": 1203,
+            "diff": "4.82"
+          },
+          {
+            "status": "attention",
+            "interval": 2933,
+            "diff": "3.17"
           }
         ]
       },
       {
         "id": 90,
-        "name": "Saturday",
-        "age": 15,
-        "type": "horse",
+        "name": "March",
+        "age": 4,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3878,
+            "diff": "3.60"
+          },
+          {
+            "status": "feed",
+            "interval": 5387,
+            "diff": "3.63"
+          },
+          {
+            "status": "sleep",
+            "interval": 3041,
+            "diff": "1.15"
+          },
+          {
+            "status": "toilet",
+            "interval": 1147,
+            "diff": "1.27"
+          },
+          {
+            "status": "attention",
+            "interval": 2078,
+            "diff": "2.90"
+          }
+        ]
+      },
+      {
+        "id": 91,
+        "name": "March",
+        "age": 7,
+        "type": "squirrel",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "green",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2064,
+            "diff": "2.98"
+          },
+          {
+            "status": "feed",
+            "interval": 2082,
+            "diff": "1.14"
+          },
+          {
+            "status": "sleep",
+            "interval": 4465,
+            "diff": "2.78"
+          },
+          {
+            "status": "toilet",
+            "interval": 2510,
+            "diff": "4.29"
+          },
+          {
+            "status": "attention",
+            "interval": 1728,
+            "diff": "2.71"
+          }
+        ]
+      },
+      {
+        "id": 92,
+        "name": "Tuesday",
+        "age": 6,
+        "type": "fish",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "orange",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 628,
+            "diff": "3.05"
+          },
+          {
+            "status": "feed",
+            "interval": 3280,
+            "diff": "3.77"
+          },
+          {
+            "status": "sleep",
+            "interval": 2376,
+            "diff": "4.13"
+          },
+          {
+            "status": "toilet",
+            "interval": 1726,
+            "diff": "2.57"
+          },
+          {
+            "status": "attention",
+            "interval": 1910,
+            "diff": "2.43"
+          }
+        ]
+      },
+      {
+        "id": 93,
+        "name": "May",
+        "age": 10,
+        "type": "mice",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "indigo",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 1530,
+            "diff": "1.28"
+          },
+          {
+            "status": "feed",
+            "interval": 4004,
+            "diff": "4.09"
+          },
+          {
+            "status": "sleep",
+            "interval": 2216,
+            "diff": "3.54"
+          },
+          {
+            "status": "toilet",
+            "interval": 2760,
+            "diff": "3.14"
+          },
+          {
+            "status": "attention",
+            "interval": 2184,
+            "diff": "2.86"
+          }
+        ]
+      },
+      {
+        "id": 94,
+        "name": "October",
+        "age": 13,
+        "type": "dog",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 2126,
+            "diff": "1.21"
+          },
+          {
+            "status": "feed",
+            "interval": 2661,
+            "diff": "3.53"
+          },
+          {
+            "status": "sleep",
+            "interval": 5281,
+            "diff": "3.47"
+          },
+          {
+            "status": "toilet",
+            "interval": 1376,
+            "diff": "3.15"
+          },
+          {
+            "status": "attention",
+            "interval": 1661,
+            "diff": "4.83"
+          }
+        ]
+      },
+      {
+        "id": 95,
+        "name": "Tuesday",
+        "age": 17,
+        "type": "goose",
         "description": "nice pet",
         "hadOwner": false,
         "color": "yellow",
         "statuses": [
           {
             "status": "fun",
-            "interval": 2170,
-            "diff": "3.38"
+            "interval": 1660,
+            "diff": "2.28"
           },
           {
             "status": "feed",
-            "interval": 4318,
-            "diff": "1.88"
+            "interval": 4919,
+            "diff": "1.33"
           },
           {
             "status": "sleep",
-            "interval": 3014,
-            "diff": "1.69"
+            "interval": 6956,
+            "diff": "4.83"
           },
           {
             "status": "toilet",
-            "interval": 1260,
-            "diff": "3.06"
+            "interval": 2288,
+            "diff": "2.84"
           },
           {
             "status": "attention",
-            "interval": 1228,
-            "diff": "1.28"
+            "interval": 2551,
+            "diff": "2.24"
           }
         ]
       },
       {
-        "id": 91,
-        "name": "October",
-        "age": 14,
-        "type": "butterfly",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2751,
-            "diff": "3.68"
-          },
-          {
-            "status": "feed",
-            "interval": 4708,
-            "diff": "1.79"
-          },
-          {
-            "status": "sleep",
-            "interval": 3960,
-            "diff": "1.88"
-          },
-          {
-            "status": "toilet",
-            "interval": 1498,
-            "diff": "3.21"
-          },
-          {
-            "status": "attention",
-            "interval": 2931,
-            "diff": "1.20"
-          }
-        ]
-      },
-      {
-        "id": 92,
-        "name": "Friday",
-        "age": 16,
-        "type": "fish",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "violet",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2002,
-            "diff": "1.75"
-          },
-          {
-            "status": "feed",
-            "interval": 3960,
-            "diff": "2.32"
-          },
-          {
-            "status": "sleep",
-            "interval": 4648,
-            "diff": "1.96"
-          },
-          {
-            "status": "toilet",
-            "interval": 1076,
-            "diff": "2.37"
-          },
-          {
-            "status": "attention",
-            "interval": 1892,
-            "diff": "1.76"
-          }
-        ]
-      },
-      {
-        "id": 93,
-        "name": "Afternoon",
-        "age": 8,
-        "type": "cat",
+        "id": 96,
+        "name": "January",
+        "age": 18,
+        "type": "pig",
         "description": "nice pet",
         "hadOwner": false,
         "color": "blue",
         "statuses": [
           {
             "status": "fun",
-            "interval": 3401,
-            "diff": "2.68"
+            "interval": 4371,
+            "diff": "2.63"
           },
           {
             "status": "feed",
-            "interval": 3325,
-            "diff": "2.41"
+            "interval": 3831,
+            "diff": "1.00"
           },
           {
             "status": "sleep",
-            "interval": 5758,
-            "diff": "3.99"
+            "interval": 2584,
+            "diff": "3.73"
           },
           {
             "status": "toilet",
-            "interval": 2154,
-            "diff": "3.52"
+            "interval": 2272,
+            "diff": "4.09"
           },
           {
             "status": "attention",
-            "interval": 1932,
-            "diff": "4.05"
-          }
-        ]
-      },
-      {
-        "id": 94,
-        "name": "Morning",
-        "age": 9,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 1374,
-            "diff": "3.70"
-          },
-          {
-            "status": "feed",
-            "interval": 3984,
-            "diff": "3.99"
-          },
-          {
-            "status": "sleep",
-            "interval": 2260,
-            "diff": "3.69"
-          },
-          {
-            "status": "toilet",
-            "interval": 2913,
-            "diff": "4.01"
-          },
-          {
-            "status": "attention",
-            "interval": 2614,
-            "diff": "3.79"
-          }
-        ]
-      },
-      {
-        "id": 95,
-        "name": "April",
-        "age": 3,
-        "type": "fish",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 4390,
-            "diff": "2.93"
-          },
-          {
-            "status": "feed",
-            "interval": 4699,
-            "diff": "4.79"
-          },
-          {
-            "status": "sleep",
-            "interval": 6861,
-            "diff": "2.60"
-          },
-          {
-            "status": "toilet",
-            "interval": 1136,
-            "diff": "3.67"
-          },
-          {
-            "status": "attention",
-            "interval": 1352,
-            "diff": "1.48"
-          }
-        ]
-      },
-      {
-        "id": 96,
-        "name": "July",
-        "age": 13,
-        "type": "butterfly",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "orange",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3407,
-            "diff": "1.54"
-          },
-          {
-            "status": "feed",
-            "interval": 4049,
-            "diff": "2.57"
-          },
-          {
-            "status": "sleep",
-            "interval": 2498,
-            "diff": "3.63"
-          },
-          {
-            "status": "toilet",
-            "interval": 2763,
-            "diff": "2.60"
-          },
-          {
-            "status": "attention",
-            "interval": 1800,
-            "diff": "4.36"
+            "interval": 2123,
+            "diff": "4.95"
           }
         ]
       },
       {
         "id": 97,
-        "name": "Tuesday",
-        "age": 4,
-        "type": "horse",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "purple",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 3326,
-            "diff": "1.69"
-          },
-          {
-            "status": "feed",
-            "interval": 5049,
-            "diff": "2.93"
-          },
-          {
-            "status": "sleep",
-            "interval": 3835,
-            "diff": "1.59"
-          },
-          {
-            "status": "toilet",
-            "interval": 2166,
-            "diff": "4.42"
-          },
-          {
-            "status": "attention",
-            "interval": 2088,
-            "diff": "2.13"
-          }
-        ]
-      },
-      {
-        "id": 98,
-        "name": "September",
-        "age": 16,
-        "type": "pigeon",
-        "description": "nice pet",
-        "hadOwner": false,
-        "color": "red",
-        "statuses": [
-          {
-            "status": "fun",
-            "interval": 2699,
-            "diff": "3.73"
-          },
-          {
-            "status": "feed",
-            "interval": 5605,
-            "diff": "3.57"
-          },
-          {
-            "status": "sleep",
-            "interval": 5239,
-            "diff": "1.87"
-          },
-          {
-            "status": "toilet",
-            "interval": 2369,
-            "diff": "4.93"
-          },
-          {
-            "status": "attention",
-            "interval": 2934,
-            "diff": "4.00"
-          }
-        ]
-      },
-      {
-        "id": 99,
-        "name": "Wednesday",
-        "age": 8,
-        "type": "goose",
+        "name": "February",
+        "age": 7,
+        "type": "rabbit",
         "description": "nice pet",
         "hadOwner": false,
         "color": "violet",
         "statuses": [
           {
             "status": "fun",
-            "interval": 622,
-            "diff": "3.81"
+            "interval": 2179,
+            "diff": "1.44"
           },
           {
             "status": "feed",
-            "interval": 3503,
-            "diff": "1.21"
+            "interval": 4011,
+            "diff": "1.56"
           },
           {
             "status": "sleep",
-            "interval": 6275,
-            "diff": "1.85"
+            "interval": 2393,
+            "diff": "4.92"
           },
           {
             "status": "toilet",
-            "interval": 2530,
-            "diff": "3.94"
+            "interval": 2901,
+            "diff": "2.10"
           },
           {
             "status": "attention",
-            "interval": 1094,
-            "diff": "1.86"
+            "interval": 1809,
+            "diff": "2.32"
+          }
+        ]
+      },
+      {
+        "id": 98,
+        "name": "August",
+        "age": 9,
+        "type": "dog",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "purple",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 3894,
+            "diff": "4.66"
+          },
+          {
+            "status": "feed",
+            "interval": 5197,
+            "diff": "2.04"
+          },
+          {
+            "status": "sleep",
+            "interval": 2956,
+            "diff": "4.09"
+          },
+          {
+            "status": "toilet",
+            "interval": 1306,
+            "diff": "3.44"
+          },
+          {
+            "status": "attention",
+            "interval": 2711,
+            "diff": "1.38"
+          }
+        ]
+      },
+      {
+        "id": 99,
+        "name": "Evening",
+        "age": 17,
+        "type": "rabbit",
+        "description": "nice pet",
+        "hadOwner": false,
+        "color": "violet",
+        "statuses": [
+          {
+            "status": "fun",
+            "interval": 4847,
+            "diff": "3.51"
+          },
+          {
+            "status": "feed",
+            "interval": 2429,
+            "diff": "4.64"
+          },
+          {
+            "status": "sleep",
+            "interval": 6136,
+            "diff": "1.31"
+          },
+          {
+            "status": "toilet",
+            "interval": 2142,
+            "diff": "4.94"
+          },
+          {
+            "status": "attention",
+            "interval": 2056,
+            "diff": "4.04"
           }
         ]
       }
     ]
+  }
 }

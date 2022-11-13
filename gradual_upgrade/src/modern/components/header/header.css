@@ -8,7 +8,7 @@
 }
 .app-header__main {
     display: flex;
-    flex: 1 1 100%;
+    flex: 1 1 50%;
 }
 .app-header__actions {
     display: flex;
