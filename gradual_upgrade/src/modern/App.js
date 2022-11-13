@@ -24,7 +24,7 @@ const App = memo(() => {
             <Routes>
               <Route path={ROUTE_URLS.react18} element={<React18Page />} />
               <Route path={ROUTE_URLS.react16} element={<React16Page />} />
-              <Route path={'/'} element={<React16Page />} />
+              <Route path={'/'} element={<React18Page />} />
             </Routes>
           </Suspense>
         </Layout>

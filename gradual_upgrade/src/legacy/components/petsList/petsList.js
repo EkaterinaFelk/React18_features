@@ -82,7 +82,7 @@ const PetsList = memo(() => {
 
   return (
     <>
-      <input typr="search" value={searchValue} onChange={handleFilter} />
+     <input typr="search" className={'app-pets__search'} placeholder={'Search'} value={searchValue} onChange={handleFilter} />
       <div className={cn('app-pets', { 'app-pets__grid': theme === 'grid' })}>
         {loading && <Spinner />}
         {orderedPets.map((pet) => (

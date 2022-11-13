@@ -5,3 +5,8 @@
 .app-pets__grid {
     grid-template-columns: 1fr 1fr 1fr;
 }
+.app-pets__search {
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
