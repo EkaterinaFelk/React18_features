@@ -7,7 +7,7 @@ export default function React18Page() {
   return (
     <>
       <Disclaimer />
-      <PetsList />
+     <PetsList />
      {/* <PetsListWithoutConcurrency /> */}
     </>
   );

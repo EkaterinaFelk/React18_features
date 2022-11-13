@@ -9,8 +9,8 @@ import {
 } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
-import CardWithReducer from '../../shared/card/cardWithReducer';
-import CardWithEffect from '../../shared/card/cardWithEffect';
+//import CardWithReducer from '../../shared/card/cardWithReducer';
+//import CardWithEffect from '../../shared/card/cardWithEffect';
 import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';
 import * as cn from 'classnames';
