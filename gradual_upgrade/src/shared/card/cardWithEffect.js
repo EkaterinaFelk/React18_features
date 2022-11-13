@@ -117,7 +117,7 @@ const CardWithEffect = memo(({ pet, onAdd }) => {
   // batching is working in useEffect
   useEffect(() => {
     doAction(action);
-  }, []);
+  }, [action, doAction]);
 
   useEffect(() => {
     const clear = createPropertyInterval(
