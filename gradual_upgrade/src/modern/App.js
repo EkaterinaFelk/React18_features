@@ -13,8 +13,8 @@ const App = memo(() => {
 
   useEffect(() => console.log('App mount'), []);
 
-  const React16Page = useMemo(() => lazyLegacyRoot(() => import('../legacy/React16Page')), []);
-  const React18Page = React.lazy(() => import('../modern/React18Page'));
+  const ReactLegacyPage = useMemo(() => lazyLegacyRoot(() => import('../legacy/ReactLegacyPage')), []);
+  const ReactModernPage = React.lazy(() => import('../modern/ReactModernPage'));
 
   return (
     <BrowserRouter>
@@ -22,9 +22,9 @@ const App = memo(() => {
         <Layout>
           <Suspense fallback={<Spinner />}>
             <Routes>
-              <Route path={ROUTE_URLS.react18} element={<React18Page />} />
-              <Route path={ROUTE_URLS.react16} element={<React16Page />} />
-              <Route path={'/'} element={<React18Page />} />
+              <Route path={ROUTE_URLS.reactModern} element={<ReactModernPage />} />
+              <Route path={ROUTE_URLS.reactLegacy} element={<ReactLegacyPage />} />
+              <Route path={'/'} element={<ReactModernPage />} />
             </Routes>
           </Suspense>
         </Layout>

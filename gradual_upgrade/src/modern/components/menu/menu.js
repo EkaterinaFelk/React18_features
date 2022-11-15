@@ -8,17 +8,17 @@ export default function Menu() {
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? 'app-menu__item-active' : 'app-menu__item')}
-          to={ROUTE_URLS.react16}
+          to={ROUTE_URLS.reactLegacy}
         >
-          React-16
+          React Legacy
         </NavLink>
       </li>
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? 'app-menu__item-active' : 'app-menu__item')}
-          to={ROUTE_URLS.react18}
+          to={ROUTE_URLS.reactModern}
         >
-          React-18
+          React Modern
         </NavLink>
       </li>
     </menu>

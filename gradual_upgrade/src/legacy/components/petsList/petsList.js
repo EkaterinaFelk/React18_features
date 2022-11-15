@@ -86,8 +86,8 @@ const PetsList = memo(() => {
       <div className={cn('app-pets', { 'app-pets__grid': theme === 'grid' })}>
         {loading && <Spinner />}
         {orderedPets.map((pet) => (
-          /*<Card key={pet.id} pet={pet} onAdd={handleAdd} />*/
-          <CardWithReducer key={pet.id} pet={pet} onAdd={handleAdd} />
+          <Card key={pet.id} pet={pet} onAdd={handleAdd} />
+          /*<CardWithReducer key={pet.id} pet={pet} onAdd={handleAdd} />*/
           /*<CardWithEffect key={pet.id} pet={pet} onAdd={handleAdd} />*/
         ))}
       </div>

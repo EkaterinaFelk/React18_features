@@ -2,8 +2,8 @@ import { memo, useEffect } from 'react';
 import Disclaimer from './shared/disclaimer/disclaimer';
 import PetsList from './components/petsList/petsList';
 
-const React16Page = memo(() => {
-  useEffect(() => console.log('React16Page mount'), []);
+const ReactLegacyPage = memo(() => {
+  useEffect(() => console.log('ReactLegacyPage mount'), []);
 
   return (
     <>
@@ -13,4 +13,4 @@ const React16Page = memo(() => {
   );
 });
 
-export default React16Page;
+export default ReactLegacyPage;
