@@ -7,8 +7,8 @@ export default function ReactModernPage() {
   return (
     <>
       <Disclaimer />
-     <PetsList />
-     {/* <PetsListWithoutConcurrency /> */}
+      <PetsList />
+    {/*  <PetsListWithoutConcurrency />  */}
     </>
   );
 }

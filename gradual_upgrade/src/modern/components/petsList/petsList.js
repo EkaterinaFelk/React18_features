@@ -32,18 +32,16 @@ const PetsList = memo(() => {
   const dispatch = useDispatch();
 
   const pets = useSelector((state) => state.pets.data);
-  const deferredPets = useDeferredValue(pets); // time delay depends on count of elements
+  const deferredPets = useDeferredValue(pets);
 
   const loading = useSelector((state) => state.pets.loading);
   const [filteredPets, setFilteredPets] = useState([]);
   const [orderedPets, setOrderedPets] = useState([]);
 
   const [searchValue, setSearchValue] = useState('');
-  const deferredSearchValue = useDeferredValue(searchValue);
+  //const deferredSearchValue = useDeferredValue(searchValue);
 
-  const [isPending, startTransition] = useTransition();
-
-  const isEmptySearch = useMemo(() => deferredSearchValue === '', [deferredSearchValue]);
+  const isEmptySearch = useMemo(() => searchValue === '', [searchValue]);
 
   const loadPets = useCallback((data) => dispatch(createLoadPetsAction(data)), [dispatch]);
   const startLoading = useCallback(() => dispatch(createLoadingStartPetsAction()), [dispatch]);
@@ -62,20 +60,21 @@ const PetsList = memo(() => {
     setOrderedPets(_filteredPets);
   }, [filteredPets]);
 
+  const [isPending, startTransition] = useTransition();
+
   const filterPets = useCallback(
     (search) => {
-      if (search !== '') {
         const foundPets = searchPets(deferredPets, search);
-        // not urgent render
-        startTransition(() => setFilteredPets(foundPets));
-      }
+        setFilteredPets(foundPets)  
     },
     [deferredPets]
   );
 
   useEffect(() => {
-    filterPets(deferredSearchValue);
-  }, [deferredSearchValue, filterPets]);
+    if (!isEmptySearch) {
+      startTransition(() => filterPets(searchValue));
+    }
+  }, [searchValue, filterPets, isEmptySearch]);
 
   useEffect(() => {
     startLoading();

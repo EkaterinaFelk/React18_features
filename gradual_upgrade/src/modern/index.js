@@ -6,23 +6,17 @@ import { Provider } from 'react-redux';
 import App from './App';
 import { store } from '../store';
 
-//Discard concurrency
-/* ReactDOM.render(
-  <>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </>,
-  document.getElementById('root')
-);
- */
-const root = createRoot(document.getElementById('root'));
-
 //Strict mode renders twice intentionslly - react doc
-root.render(
+const RootComponent = () => (
   <>
-    <Provider store={store}>
-      <App />
-    </Provider>
+      <Provider store={store}>
+        <App />
+      </Provider>
   </>
 );
+
+//Discard concurrency
+/*ReactDOM.render(<RootComponent />, document.getElementById('root'));*/
+
+const root = createRoot(document.getElementById('root'));
+root.render(<RootComponent />);

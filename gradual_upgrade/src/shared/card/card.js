@@ -44,60 +44,56 @@ const Card = memo(({ pet, onAdd }) => {
   const doAction = useCallback(
     (action) => {
       if (isReadyToAction(feed, fun, sleep, toilet, attention)) {
-        switch (action) {
-          case 'feed':
-            setFeed((value) => value + ADDED_DIFF);
-            setToilet((value) => value - settingsToilet.diff);
-            setSleep((value) => value - settingsSleep.diff);
-            setAttention((value) => value + settingsAttention.diff);
-            setFun((value) => value - settingsFun.diff);
-            break;
-          case 'fun':
-            setFun((value) => value + ADDED_DIFF);
-            setFeed((value) => value - settingsFeed.diff);
-            setToilet((value) => value - settingsToilet.diff);
-            setSleep((value) => value - settingsSleep.diff);
-            setAttention((value) => value + settingsAttention.diff);
-            break;
-          case 'sleep':
-            setSleep((value) => value + ADDED_DIFF);
-            setFun((value) => value - settingsFun.diff);
-            setFeed((value) => value - settingsFeed.diff);
-            setToilet((value) => value - settingsToilet.diff);
-            setAttention((value) => value - settingsAttention.diff);
-            break;
-          case 'toilet':
-            setToilet((value) => value + ADDED_DIFF);
-            setSleep((value) => value - settingsSleep.diff);
-            setFun((value) => value - settingsFun.diff);
-            setFeed((value) => value - settingsFeed.diff);
-            setAttention((value) => value - settingsAttention.diff);
-            break;
-          case 'attention':
-            setAttention((value) => value + ADDED_DIFF);
-            setToilet((value) => value - settingsToilet.diff);
-            setSleep((value) => value - settingsSleep.diff);
-            setFun((value) => value + settingsFun.diff);
-            setFeed((value) => value - settingsFeed.diff);
-            break;
+      switch (action) {
+        case 'feed':
+          setFeed((value) => value + ADDED_DIFF);
+          setToilet((value) => value - settingsToilet.diff);
+          setSleep((value) => value - settingsSleep.diff);
+          setAttention((value) => value + settingsAttention.diff);
+          setFun((value) => value - settingsFun.diff);
+          break;
+        case 'fun':
+          setFun((value) => value + ADDED_DIFF);
+          setFeed((value) => value - settingsFeed.diff);
+          setToilet((value) => value - settingsToilet.diff);
+          setSleep((value) => value - settingsSleep.diff);
+          setAttention((value) => value + settingsAttention.diff);
+          break;
+        case 'sleep':
+          setSleep((value) => value + ADDED_DIFF);
+          setFun((value) => value - settingsFun.diff);
+          setFeed((value) => value - settingsFeed.diff);
+          setToilet((value) => value - settingsToilet.diff);
+          setAttention((value) => value - settingsAttention.diff);
+          break;
+        case 'toilet':
+          setToilet((value) => value + ADDED_DIFF);
+          setSleep((value) => value - settingsSleep.diff);
+          setFun((value) => value - settingsFun.diff);
+          setFeed((value) => value - settingsFeed.diff);
+          setAttention((value) => value - settingsAttention.diff);
+          break;
+        case 'attention':
+          setAttention((value) => value + ADDED_DIFF);
+          setToilet((value) => value - settingsToilet.diff);
+          setSleep((value) => value - settingsSleep.diff);
+          setFun((value) => value + settingsFun.diff);
+          setFeed((value) => value - settingsFeed.diff);
+          break;
+        case 'test':
+          setAttention((value) => value - ADDED_DIFF);
+          setToilet((value) => value - settingsToilet.diff);
+          setSleep((value) => value - settingsSleep.diff);
+          setFun((value) => value - settingsFun.diff);
+          setFeed((value) => value - settingsFeed.diff);
+          break;
 
-          default:
-            break;
-        }
+        default:
+          break;
+      }
       }
     },
-    [
-      attention,
-      feed,
-      fun,
-      settingsAttention.diff,
-      settingsFeed.diff,
-      settingsFun.diff,
-      settingsSleep.diff,
-      settingsToilet.diff,
-      sleep,
-      toilet
-    ]
+    [attention, feed, fun, settingsAttention.diff, settingsFeed.diff, settingsFun.diff, settingsSleep.diff, settingsToilet.diff, sleep, toilet]
   );
 
   useEffect(() => {
@@ -111,7 +107,7 @@ const Card = memo(({ pet, onAdd }) => {
     return () => clear();
   }, [attention, doAction, feed, fun, sleep, toilet]);
 
-  useEffect(() => {
+   useEffect(() => {
     const clear = createPropertyInterval(
       fun,
       () => setFun((value) => value - settingsFun.diff),

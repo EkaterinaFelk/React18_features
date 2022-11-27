@@ -71,6 +71,16 @@ function reducer(state, { type, settings }) {
         feed: state.feed - settings.feed
       };
     }
+    case 'actionTest': {
+      return {
+        ...state,
+        attention: state.attention + ADDED_DIFF,
+        toilet: state.toilet - settings.toilet,
+        sleep: state.sleep - settings.sleep,
+        fun: state.fun + settings.fun,
+        feed: state.feed - settings.feed
+      };
+    }
     case 'feed': {
       return {
         ...state,
@@ -115,6 +125,8 @@ function reducer(state, { type, settings }) {
       return state;
   }
 }
+
+console.log('render');
 
 const CardWithReducer = memo(({ pet, onAdd }) => {
   const [state, dispatchState] = useReducer(reducer, {
@@ -176,6 +188,9 @@ const CardWithReducer = memo(({ pet, onAdd }) => {
           case 'attention':
             dispatchState({ type: 'actionAttention', settings });
             break;
+          case 'test':
+            dispatchState({ type: 'actionTest', settings });
+            break;
 
           default:
             break;
@@ -196,7 +211,7 @@ const CardWithReducer = memo(({ pet, onAdd }) => {
     return () => clear();
   }, [doAction, state.attention, state.feed, state.fun, state.sleep, state.toilet]);
 
-  useEffect(() => {
+ useEffect(() => {
     const clear = createPropertyInterval(
       state.fun,
       () => dispatchState({ type: 'fun', settings: { fun: settingsFun.diff } }),
