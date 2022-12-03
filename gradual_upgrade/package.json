@@ -37,7 +37,8 @@
     "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
     "lint:fix": "eslint --fix",
     "format": "npm run lint --fix & prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "server": "json-server --watch -p 4000 src/api/db.json"
+    "server": "json-server --watch -p 4000 src/api/db.json",
+    "start:prod": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
