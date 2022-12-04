@@ -11,6 +11,7 @@
     "react-router-dom": "6.4.2",
     "react-scripts": "5.0.1",
     "redux": "4.0.5",
+    "serve": "^14.1.2",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
