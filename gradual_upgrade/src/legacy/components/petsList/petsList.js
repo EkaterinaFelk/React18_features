@@ -2,7 +2,9 @@ import React from 'react';
 import { memo, useEffect, useMemo, useState, useCallback, useContext } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 import CardWithReducer from '../../shared/card/cardWithReducer';
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 import CardWithEffect from '../../shared/card/cardWithEffect';
 import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';

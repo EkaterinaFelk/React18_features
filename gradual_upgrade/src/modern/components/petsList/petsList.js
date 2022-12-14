@@ -11,7 +11,9 @@ import {
 } from 'react';
 import { fetchPets } from '../../../api/api';
 import Card from '../../shared/card/card';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
 import CardWithReducer from '../../shared/card/cardWithReducer';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
 import CardWithEffect from '../../shared/card/cardWithEffect';
 import { useDispatch, useSelector } from 'react-redux';
 import ThemeContext from '../../shared/ThemeContext';

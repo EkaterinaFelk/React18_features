@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-unused-vars
 import { useCallback } from 'react';
 import Logo from '../logo/logo';
 import Menu from '../menu/menu';

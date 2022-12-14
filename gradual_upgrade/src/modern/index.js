@@ -1,5 +1,7 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 import { StrictMode } from 'react';
+// eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 import * as ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
